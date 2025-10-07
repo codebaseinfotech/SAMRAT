@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "traditional_band_confirmation_bg.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

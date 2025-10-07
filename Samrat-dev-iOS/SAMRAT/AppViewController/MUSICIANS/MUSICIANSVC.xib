@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MUSICIANSVC" customModule="SAMRAT" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoDataFound" destination="O7k-dw-GsC" id="6A6-Xi-9BI"/>
+                <outlet property="tableView" destination="9Vk-Sm-TOG" id="ycs-ER-LY5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBG" destination="b37-ep-TJb" id="sNZ-Fw-eJD"/>
+                <outlet property="viewWA" destination="C7l-dC-dqO" id="Oed-kV-34U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SAMRAT_MUSICSELECTION" translatesAutoresizingMaskIntoConstraints="NO" id="b37-ep-TJb">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1z-0R-CTk">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9Vk-Sm-TOG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7k-dw-GsC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9Vk-Sm-TOG" secondAttribute="bottom" id="C6w-qa-uP0"/>
+                        <constraint firstItem="O7k-dw-GsC" firstAttribute="top" secondItem="D1z-0R-CTk" secondAttribute="top" id="P3l-oZ-9cV"/>
+                        <constraint firstItem="O7k-dw-GsC" firstAttribute="leading" secondItem="D1z-0R-CTk" secondAttribute="leading" id="dqX-6d-xDC"/>
+                        <constraint firstAttribute="trailing" secondItem="9Vk-Sm-TOG" secondAttribute="trailing" id="j2D-ff-kmC"/>
+                        <constraint firstItem="9Vk-Sm-TOG" firstAttribute="leading" secondItem="D1z-0R-CTk" secondAttribute="leading" id="l0b-Eo-Zt1"/>
+                        <constraint firstAttribute="trailing" secondItem="O7k-dw-GsC" secondAttribute="trailing" id="lcD-q8-MeZ"/>
+                        <constraint firstItem="9Vk-Sm-TOG" firstAttribute="top" secondItem="D1z-0R-CTk" secondAttribute="top" id="lqO-Pi-FUa"/>
+                        <constraint firstAttribute="bottom" secondItem="O7k-dw-GsC" secondAttribute="bottom" id="xMf-9w-ua0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7l-dC-dqO">
+                    <rect key="frame" x="344" y="58" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="Qnq-18-HsP">
+                            <rect key="frame" x="11" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="6U9-Al-nXu"/>
+                                <constraint firstAttribute="width" constant="32" id="KEj-7i-IT9"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1O-Ge-e5z">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="clickedWA:" destination="-1" eventType="touchUpInside" id="BA5-Br-hrO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8862745098" green="0.85490196080000003" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Qnq-18-HsP" firstAttribute="centerX" secondItem="C7l-dC-dqO" secondAttribute="centerX" constant="2" id="Aih-Lc-FWj"/>
+                        <constraint firstItem="Qnq-18-HsP" firstAttribute="centerY" secondItem="C7l-dC-dqO" secondAttribute="centerY" id="DfC-IH-8Fo"/>
+                        <constraint firstItem="D1O-Ge-e5z" firstAttribute="leading" secondItem="C7l-dC-dqO" secondAttribute="leading" id="OJx-Wl-4wr"/>
+                        <constraint firstAttribute="height" constant="50" id="bay-Wy-eke"/>
+                        <constraint firstAttribute="bottom" secondItem="D1O-Ge-e5z" secondAttribute="bottom" id="erG-jd-yGw"/>
+                        <constraint firstAttribute="width" constant="50" id="rf4-k5-Irp"/>
+                        <constraint firstAttribute="trailing" secondItem="D1O-Ge-e5z" secondAttribute="trailing" id="wTH-7c-xo1"/>
+                        <constraint firstItem="D1O-Ge-e5z" firstAttribute="top" secondItem="C7l-dC-dqO" secondAttribute="top" id="ytY-aG-Jf2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="D1z-0R-CTk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4lg-60-4LL"/>
+                <constraint firstItem="b37-ep-TJb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="64f-xe-DdB"/>
+                <constraint firstItem="b37-ep-TJb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jeh-cl-qtM"/>
+                <constraint firstAttribute="bottom" secondItem="b37-ep-TJb" secondAttribute="bottom" id="Kbf-7H-n9X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1z-0R-CTk" secondAttribute="trailing" id="Rbd-r9-mgh"/>
+                <constraint firstItem="C7l-dC-dqO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="YZY-qm-58k"/>
+                <constraint firstItem="D1z-0R-CTk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qRM-oy-FIm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C7l-dC-dqO" secondAttribute="trailing" constant="20" id="sZf-rb-xs1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b37-ep-TJb" secondAttribute="trailing" id="sqP-wx-rAb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D1z-0R-CTk" secondAttribute="bottom" id="yey-S1-mSN"/>
+            </constraints>
+            <point key="canvasLocation" x="-65.217391304347828" y="48.883928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SAMRAT_MUSICSELECTION" width="375" height="667"/>
+        <image name="whatsapp" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module UIViewUseful {
+  umbrella header "UIViewUseful-umbrella.h"
+
+  export *
+  module * { export * }
+}

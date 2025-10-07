@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FAQVC" customModule="SAMRAT" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="o95-yF-ohf" id="rHC-iV-k3B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWA" destination="s79-7T-epg" id="IZz-aF-n6o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SAMRAT_BG" translatesAutoresizingMaskIntoConstraints="NO" id="tPF-ro-5Xa">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="o95-yF-ohf">
+                    <rect key="frame" x="20" y="48" width="374" height="814"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s79-7T-epg">
+                    <rect key="frame" x="344" y="58" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="j71-ZU-AlL">
+                            <rect key="frame" x="11" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="g0w-dy-ePK"/>
+                                <constraint firstAttribute="height" constant="32" id="xV4-BU-Iof"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMh-OK-Koe">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="clickedWA:" destination="-1" eventType="touchUpInside" id="hry-f9-d3Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8862745098" green="0.85490196080000003" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="j71-ZU-AlL" firstAttribute="centerY" secondItem="s79-7T-epg" secondAttribute="centerY" id="00f-wd-mI3"/>
+                        <constraint firstAttribute="width" constant="50" id="9Lq-kx-pIB"/>
+                        <constraint firstItem="j71-ZU-AlL" firstAttribute="centerX" secondItem="s79-7T-epg" secondAttribute="centerX" constant="2" id="Nkg-Uo-2Do"/>
+                        <constraint firstItem="lMh-OK-Koe" firstAttribute="leading" secondItem="s79-7T-epg" secondAttribute="leading" id="WjZ-bU-yI9"/>
+                        <constraint firstAttribute="height" constant="50" id="dke-r1-NSF"/>
+                        <constraint firstItem="lMh-OK-Koe" firstAttribute="top" secondItem="s79-7T-epg" secondAttribute="top" id="kG7-8c-B9W"/>
+                        <constraint firstAttribute="bottom" secondItem="lMh-OK-Koe" secondAttribute="bottom" id="qRc-TQ-WTW"/>
+                        <constraint firstAttribute="trailing" secondItem="lMh-OK-Koe" secondAttribute="trailing" id="rba-in-lxy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.090196078430000007" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tPF-ro-5Xa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Cg-sB-Gw7"/>
+                <constraint firstAttribute="bottom" secondItem="tPF-ro-5Xa" secondAttribute="bottom" id="4He-gL-ort"/>
+                <constraint firstItem="s79-7T-epg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="4K6-Jr-qeC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s79-7T-epg" secondAttribute="trailing" constant="20" id="69V-r4-Hhm"/>
+                <constraint firstItem="o95-yF-ohf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7lR-Bg-JPU"/>
+                <constraint firstItem="tPF-ro-5Xa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E8t-8R-Ncl"/>
+                <constraint firstItem="o95-yF-ohf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Gc1-Tg-0LD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tPF-ro-5Xa" secondAttribute="trailing" id="eFn-jJ-B1C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o95-yF-ohf" secondAttribute="bottom" id="pBU-4t-Fpi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o95-yF-ohf" secondAttribute="trailing" constant="20" id="qUU-fx-Z8K"/>
+            </constraints>
+            <point key="canvasLocation" x="-64" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SAMRAT_BG" width="359.5" height="640"/>
+        <image name="whatsapp" width="512" height="512"/>
+    </resources>
+</document>

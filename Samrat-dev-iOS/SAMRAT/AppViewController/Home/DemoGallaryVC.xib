@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoGallaryVC" customModule="SAMRAT" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWA" destination="M5K-6X-90O" id="spx-Tp-L9l"/>
+                <outlet property="waveFormView" destination="lEk-lz-OpR" id="0pL-bL-z6K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33B-nr-l69">
+                    <rect key="frame" x="20" y="48" width="374" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUM-OU-tkt">
+                            <rect key="frame" x="0.0" y="0.0" width="74" height="120"/>
+                            <state key="normal" title="Play/Pause"/>
+                            <connections>
+                                <action selector="btnPlayPauseAction:" destination="-1" eventType="touchUpInside" id="UZA-2Q-JjC"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-lz-OpR" customClass="FDWaveformView" customModule="FDWaveformView">
+                            <rect key="frame" x="74" y="0.0" width="300" height="120"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lEk-lz-OpR" secondAttribute="bottom" id="7hT-th-PAw"/>
+                        <constraint firstAttribute="trailing" secondItem="lEk-lz-OpR" secondAttribute="trailing" id="Bpw-vi-yZY"/>
+                        <constraint firstAttribute="bottom" secondItem="sUM-OU-tkt" secondAttribute="bottom" id="Le5-zE-mSy"/>
+                        <constraint firstItem="sUM-OU-tkt" firstAttribute="top" secondItem="33B-nr-l69" secondAttribute="top" id="UiS-7U-rWc"/>
+                        <constraint firstItem="lEk-lz-OpR" firstAttribute="leading" secondItem="sUM-OU-tkt" secondAttribute="trailing" id="aA7-1k-kIi"/>
+                        <constraint firstItem="sUM-OU-tkt" firstAttribute="leading" secondItem="33B-nr-l69" secondAttribute="leading" id="cJw-QP-uoY"/>
+                        <constraint firstItem="lEk-lz-OpR" firstAttribute="top" secondItem="33B-nr-l69" secondAttribute="top" id="euN-NX-Avl"/>
+                        <constraint firstAttribute="height" constant="120" id="kkN-4A-E88"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-6X-90O">
+                    <rect key="frame" x="344" y="58" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="XHm-wu-GJg">
+                            <rect key="frame" x="11" y="9" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="329-9F-Xfg"/>
+                                <constraint firstAttribute="width" constant="32" id="Zpj-ZJ-kDa"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L31-If-SCP">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="clickedWA:" destination="-1" eventType="touchUpInside" id="DL2-l9-ICa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8862745098" green="0.85490196080000003" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="XHm-wu-GJg" firstAttribute="centerY" secondItem="M5K-6X-90O" secondAttribute="centerY" id="HrE-UL-6Cp"/>
+                        <constraint firstAttribute="width" constant="50" id="KX4-Ns-mb9"/>
+                        <constraint firstItem="L31-If-SCP" firstAttribute="top" secondItem="M5K-6X-90O" secondAttribute="top" id="Nvb-oo-CpW"/>
+                        <constraint firstItem="L31-If-SCP" firstAttribute="leading" secondItem="M5K-6X-90O" secondAttribute="leading" id="PVi-GJ-9o7"/>
+                        <constraint firstItem="XHm-wu-GJg" firstAttribute="centerX" secondItem="M5K-6X-90O" secondAttribute="centerX" constant="2" id="Tbc-8D-IdS"/>
+                        <constraint firstAttribute="bottom" secondItem="L31-If-SCP" secondAttribute="bottom" id="YQc-kC-oIR"/>
+                        <constraint firstAttribute="height" constant="50" id="ZLy-De-h0p"/>
+                        <constraint firstAttribute="trailing" secondItem="L31-If-SCP" secondAttribute="trailing" id="tfk-39-8AX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.090196078430000007" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M5K-6X-90O" secondAttribute="trailing" constant="20" id="FYM-2a-tgD"/>
+                <constraint firstItem="33B-nr-l69" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bZA-NS-izl"/>
+                <constraint firstItem="33B-nr-l69" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rDI-yT-HGE"/>
+                <constraint firstItem="M5K-6X-90O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="rfG-PD-Wmm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="33B-nr-l69" secondAttribute="trailing" constant="20" id="tIU-h7-LWD"/>
+            </constraints>
+            <point key="canvasLocation" x="-74" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="whatsapp" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

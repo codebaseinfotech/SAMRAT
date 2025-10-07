@@ -1,0 +1,141 @@
+
+/* Class = "UILabel"; text = "About Singer About Singer About Singer"; ObjectID = "0Oz-3Z-aO0"; */
+"0Oz-3Z-aO0.text" = "About Singer About Singer About Singer";
+
+/* Class = "UILabel"; text = "Terms & Conditions"; ObjectID = "1kY-tw-nMG"; */
+"1kY-tw-nMG.text" = "Terms & Conditions";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "2Iq-zg-rBN"; */
+"2Iq-zg-rBN.text" = "Notification";
+
+/* Class = "UIButton"; normalTitle = "   Agree with Terms & Condition"; ObjectID = "9eW-dc-Gby"; */
+"9eW-dc-Gby.normalTitle" = "   Agree with Terms & Condition";
+
+/* Class = "UIButton"; selectedTitle = "   Agree with Terms & Condition"; ObjectID = "9eW-dc-Gby"; */
+"9eW-dc-Gby.selectedTitle" = "   Agree with Terms & Condition";
+
+/* Class = "UIButton"; normalTitle = "  Sign In with Facebook  "; ObjectID = "9j7-fc-uND"; */
+"9j7-fc-uND.normalTitle" = "  Sign In with Facebook  ";
+
+/* Class = "UILabel"; text = "Cancellation Policy"; ObjectID = "Bxf-rZ-iZI"; */
+"Bxf-rZ-iZI.text" = "Cancellation Policy";
+
+/* Class = "UIButton"; normalTitle = "  Sign In with Google  "; ObjectID = "C0D-G4-v7P"; */
+"C0D-G4-v7P.normalTitle" = "  Sign In with Google  ";
+
+/* Class = "UILabel"; text = "If you don't have an account"; ObjectID = "D5h-V3-0IX"; */
+"D5h-V3-0IX.text" = "If you don't have an account";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "Dfq-UG-XJz"; */
+"Dfq-UG-XJz.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Email/Mobile"; ObjectID = "FaH-3t-AjL"; */
+"FaH-3t-AjL.placeholder" = "Email/Mobile";
+
+/* Class = "UILabel"; text = "adipiscing elit, sed diam nonummy nibh\neuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim"; ObjectID = "G7N-TI-Ev3"; */
+"G7N-TI-Ev3.text" = "adipiscing elit, sed diam nonummy nibh\neuismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "HrC-Iw-N0u"; */
+"HrC-Iw-N0u.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "JKq-iu-0Te"; */
+"JKq-iu-0Te.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "MURF"; ObjectID = "Kz9-1u-y60"; */
+"Kz9-1u-y60.normalTitle" = "MURF";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "NjV-lG-FnI"; */
+"NjV-lG-FnI.placeholder" = "Mobile";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "PnC-nu-d0p"; */
+"PnC-nu-d0p.normalTitle" = "Register";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "RZc-Mc-pw0"; */
+"RZc-Mc-pw0.normalTitle" = "SUBMIT";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "SnG-r1-nvw"; */
+"SnG-r1-nvw.text" = "Contact Us";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "WG8-Ai-8gl"; */
+"WG8-Ai-8gl.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "BOOK NOW"; ObjectID = "Y3M-8F-gkv"; */
+"Y3M-8F-gkv.normalTitle" = "BOOK NOW";
+
+/* Class = "UILabel"; text = "FAQ"; ObjectID = "YCh-b2-2xH"; */
+"YCh-b2-2xH.text" = "FAQ";
+
+/* Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "Ym2-kt-bCS"; */
+"Ym2-kt-bCS.normalTitle" = "LOG IN";
+
+/* Class = "UIButton"; normalTitle = "  Sign In with Apple  "; ObjectID = "ZCh-nC-Hdp"; */
+"ZCh-nC-Hdp.normalTitle" = "  Sign In with Apple  ";
+
+/* Class = "UITabBarItem"; title = "Gallery"; ObjectID = "bvY-ch-Kos"; */
+"bvY-ch-Kos.title" = "Gallery";
+
+/* Class = "UIButton"; normalTitle = "REGISTER"; ObjectID = "cIg-lB-J9Y"; */
+"cIg-lB-J9Y.normalTitle" = "REGISTER";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "cyx-kN-ONu"; */
+"cyx-kN-ONu.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "dae-hZ-izl"; */
+"dae-hZ-izl.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "My Account"; ObjectID = "fsT-Ir-3Uo"; */
+"fsT-Ir-3Uo.text" = "My Account";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "g8a-iI-YcL"; */
+"g8a-iI-YcL.text" = "Language";
+
+/* Class = "UIButton"; normalTitle = "   Agree with Terms & Condition"; ObjectID = "hPu-Lq-xIj"; */
+"hPu-Lq-xIj.normalTitle" = "   Agree with Terms & Condition";
+
+/* Class = "UIButton"; selectedTitle = "   Agree with Terms & Condition"; ObjectID = "hPu-Lq-xIj"; */
+"hPu-Lq-xIj.selectedTitle" = "   Agree with Terms & Condition";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "iLQ-yV-cya"; */
+"iLQ-yV-cya.text" = "Logout";
+
+/* Class = "UILabel"; text = " Mtrf Almotrf"; ObjectID = "iqy-kT-7OU"; */
+"iqy-kT-7OU.text" = " Mtrf Almotrf";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "m0T-Po-C1y"; */
+"m0T-Po-C1y.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "nPj-f6-hKp"; */
+"nPj-f6-hKp.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Privacy Policy"; ObjectID = "qDJ-mQ-YPx"; */
+"qDJ-mQ-YPx.text" = "Privacy Policy";
+
+/* Class = "UITextField"; placeholder = "Email/Mobile"; ObjectID = "qSB-xp-rZb"; */
+"qSB-xp-rZb.placeholder" = "Email/Mobile";
+
+/* Class = "UITabBarItem"; title = "Singers"; ObjectID = "tAD-bQ-JWu"; */
+"tAD-bQ-JWu.title" = "Singers";
+
+/* Class = "UILabel"; text = "MOTRF ALMOTRF"; ObjectID = "tTJ-Eo-yVA"; */
+"tTJ-Eo-yVA.text" = "MOTRF ALMOTRF";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "uK9-C7-n7n"; */
+"uK9-C7-n7n.placeholder" = "Mobile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vMk-LA-YYr"; */
+"vMk-LA-YYr.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "vqz-Kz-dJi"; */
+"vqz-Kz-dJi.normalTitle" = "SUBMIT";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "x4j-Py-NjI"; */
+"x4j-Py-NjI.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "yQ7-oP-2H3"; */
+"yQ7-oP-2H3.normalTitle" = "Forgot Password?";
+
+/* Class = "UILabel"; text = "About Us"; ObjectID = "zFk-cT-tDV"; */
+"zFk-cT-tDV.text" = "About Us";
+
+/* Class = "UITextView"; text = "Message"; ObjectID = "zbg-s5-UGv"; */
+"zbg-s5-UGv.text" = "Message";

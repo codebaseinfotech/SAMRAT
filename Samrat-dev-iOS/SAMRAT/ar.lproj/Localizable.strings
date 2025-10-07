@@ -1,0 +1,225 @@
+/* 
+  Localizable.strings
+  SAMRAT
+
+  Created by Keyur Baravaliya on 10/05/21.
+  
+*/
+"settings" = "الإعدادات";
+"language" = "اللغة";
+"notification" = "التنبيهات";
+"myAccount" = "حسابي";
+"FAQs" = "FAQs";
+"contactUs" = "اتصل بنا";
+"termsAndConditions" = "الشروط والأحكام";
+"aboutUs" = "نبذة عنا";
+"cancellationPolicy" = "شروط إلغاء الحجز";
+"privacyPolicy" = "سياسة الخصوصية";
+"login" = "تسجيل الدخول";
+"logout" = "تسجيل خروج";
+"on" = "على";
+"off" = "إيقاف";
+"yes" = "نعم";
+"no" = "لا";
+"forgotPassword" = "نسيت كلمة السر ؟";
+"emailMobile"="البريد الالكتروني/الهاتف";
+"password" = "كلمة السر";
+"confirmPassword" = "تأكيد كلمة السر";
+"agreeTermsCondition" = "‏اوافق على الشروط والأحكام";
+"signInWithGoogle" = " إستمرار عبر  جوجل";
+"signInWithFacebook" = " إستمرار عبر فيس بوك";
+"signInWithApple" = " Sign In With Apple ";
+"ifDontHaveAccount" = "ليس لديك حساب؟";
+"registration" = "التسجيل";
+"alert" = "تحذير !!";
+"name" = "الإسم";
+"email" = "البريد الالكتروني";
+"signUp" = "التسجيل";
+"mobile" = "هاتف";
+"Enter username" = "ادخل رقم هاتفك او بريدك الإلكتروني";
+"home" = "منزل";
+"singers" = "المطربين";
+"gallery" = "الاستديو";
+"settings" = "الإعدادات";
+"categories" = "الاقسام";
+"singersList" = "مطربين";
+"musiciansList" = "عازفين";
+"murf" = "Murf";
+"noDataFound" = "لا يوجد بيانات";
+
+"bookingDate" = "‏اختار التاريخ";
+"chooseCustom" = "اختار الفرقة";
+"chooseDefault" = "دعنا نختار لك";
+"next" = "التالي";
+"done" = "تم";
+
+"Sound System" = "هندسة الصوت";
+"Choose sound system" = "أختر هندسة الصوت";
+"chooseDefault" = "دعنا نختار لك";
+
+"SINGER" = "SINGER";
+"bookNow"= "احجز الآن";
+
+"duration" = "المدة";
+
+"country" = "Country";
+"pleaseSelectLocation" = "Please select your location";
+
+//MARK:- Payment screen txt
+"bookingDetails"="تفاصيل الحجز";
+"singerName"="اسم المغني";
+"singersName"="اسماء المغنين";
+"musicians"="العازفين";
+"date"=":التاريخ";
+"total" = "المجموع";
+"onlinePayment"="تفاصيل الحجز";
+"bookingAmount" = "عربون";
+"paymentOptions" = "طريقة الدفع";
+"cashOndelivery" = "الدفع عند الاستلام";
+"knet" = "كي نت";
+"creditCard" = "بطاقة الإئتمان";
+"pay" = "دفع";
+
+
+"newPwd" = "كلمة السر الجديدة";
+"oldPwd" = "كلمة السر القديمة";
+"submit" = "تأكيد";
+
+
+//MARK:- My Accoun Screen
+"editProfile"="تعديل الملف الشخصي";
+"manageBookings" = "سمراتي";
+"changePassword" = "تغيير كلمة السر";
+
+
+//MARK:- Payment Suceessful
+"paymentSuccessful" = "عملية الدفع مقبولة";
+"paymentFailed" = "تم رفض العمليه";
+"backToHome" = "العودة للصفحة الرئيسية";
+"paymentSuccess" = "عملية الدفع مقبولة";
+
+
+//MARK;- My Profile screen
+"address" = "العنوان";
+"update" = "تحديث";
+
+
+//MARK:- Manage Booking
+"myBookings" = "سمراتي";
+"upcoming" = "حجوزات قادمة";
+"previous" = "حجوزات سابقة";
+
+"Samrat" = "سمرات";
+
+
+"message" = "رسالة";
+"ok" = "حسنا";
+
+
+
+
+//MARK:- Alert text
+"accountDeleteAlert" = "هل انت متأكد انك ترغب بإلغاء حسابك ؟";
+"wouldYouLikeLogOut" = "هل أنت متأكد أنك تريد تسجيل الخروج؟";
+"pEntername" = "الرجاء إدخال الاسم";
+"pEnterMobilenumber" = "الرجاء إدخال رقم الهاتف المحمول";
+"pEnterValidMobileNumber" = "يرجى إدخال رقم الهاتف الصحيح";
+"pEnterCp" = "الرجاء إدخال تأكيد كلمة المرور";
+"passwrodNotMatch" = "كلمة السر الجديدة وتاكيد كلمة السر يجب أن يكون متطابق";
+"pEnterEmailAddress" = "الرجاء إدخال عنوان البريد الإلكتروني الخاص بك";
+"pEnterValidEmailAddress" = "الرجاء إدخال بريد إلكتروني صحيح";
+"pEnterPassword" = "الرجاء إدخال كلمة المرور";
+"pwdLengthAlert"="يجب أن تتكون كلمة المرور من 6 أرقام";
+"youmustAgreeTermsCondition" = "يجب الموافقة على الشروط و الاحكام.";
+"pleaseCheckInternetConnection"="يرجى التحقق من اتصالك بالإنترنت وحاول مرة أخرى!";
+"somethingWentWrong"="هناك خطأ ما";
+"pSelectMusician" = "يرجى أختيار عازفين";
+"pSelectMusicianfield" = "يرجى أختيار عازفين";
+
+"PleaseSelectService" = "يرجى اختيار نوع الخدمة";
+
+"pEnterOldPwd" = "الرجاء إدخال كلمة المرور القديمة";
+"pEnterNewPwd" = "الرجاء إدخال كلمة المرور الجديدة";
+
+"pEnterMesage" = "Please enter Messages";
+"pAllowToAccessEmail"="Please allow to access email for social login";
+
+"singerSelectAlert1" = ". لتأكيد الحجز يجب دفع مبلغ ٥٠ دينار مسترجعة في حال عدم الاتفاق";
+"singerSelectAlert2" = ". في حال إلغاء الحفل، يجب إبلاغنا بمدة لاتقل عن ٢٤ ساعة قبل موعد الحفل، وسيكون هناك استقطاع بقيمة ٥٪؜ من إجمالي المبلغ.";
+"singerSelectAlert3" = ". سيتم إرسال رسالة نصية SMS في غضون ٢٤ ساعة لتأكيد طلبك، مرفق معها رابط دفع المبلغ بالكامل.";
+
+//"singerSelectAlert4" = " لتأكيد الحجز يجب دفع مبلغ ٢٠٠ دينار مسترجعة في حال عدم الإتفاق.";
+//"singerSelectAlert4" = " لتأكيد الحجز يجب دفع مبلغ 200 مسترجعة في حال عدم الإتفاق.";
+"singerSelectAlert4" = "لتأكيد الحجز يجب دفع مبلغ 200.";
+"singerSelectAlert5" = "شروط الإلغاء : ";
+"singerSelectAlert6" = "يمكن الغاء الحجز حتى 7 ايام قبل تاريخ الحفل ، وسيتم استرجاع المبلغ المدفوع مع خصم قيمة العربون. ";
+"singerSelectAlert7" = "في حال الغاء الحجز قبل اسبوع من تاريخ الحفل يعتبر المبلغ الكلي غير مسترجع.";
+"singerSelectAlert8" = "";
+"singerSelectAlert9" = " سيتم ارسال رسالة نصية خلال 24 ساعة لتأكيد حجزك، مرفق معها رابط الدفع للمبلغ الكلي للحجز.";
+"singerSelectAlert10" = " يجب دفع المبلغ  خلال 24 ساعة من استلام رسالة تأكيد الحجز.";
+
+"Choose" = "اختر";
+"verification code" = "رمز التعريف";
+"verification message" = "تم ارسال رمز OTP";
+"verify" = "تحقق";
+"verification mobile" = "تأكيد رقم الموبايل";
+"verification mobile message" = "يرجى ادخال رقم هاتفك المحمول";
+"mobile placeholder" = "‏أدخل رقم الموبايل";
+"Send OTP" = "أرسال OTP";
+"Code" = "رمز";
+"Resend Code" = "أعد إرسال الرمز";
+"Resend Code in" = "إعادة ارسال الرمز";
+"Register Now" = "مستخدم جديد";
+"View More" = "إقرأ المزيد";
+"Read More" = "إقرأ المزيد";
+"View Less" = "إقفال";
+"No Internet" = "You have no Internet connection. Please try after sometimes.";
+"Payment Cancelled" = "تم رفض عملية الدفع";
+"Extra services" = "خدمات اضافية";
+"Payment summary" = "تفاصيل الدفع";
+"Max Musician Selected" = "لا يمكنك اختيار اكثر من";
+"Choose" = "اختر";
+"Cancel" = "إلغاء";
+"Agree" = "موافق‎";
+"MY PROFILE" = "تعديل الملف الشخصي";
+"Update Profile" = "تحديث";
+"Multiple Singers" = "أكثر من مطرب";
+"Single Singer" = "مطرب واحد";
+"More Info" = "‏تفاصيل";
+"Default Musician" = "تتكون الفرقة من ٤ إيقاعات و كمان وكيبورد، بالإضافة الى هندسة الصوت تنفيذ شركة الرندي للإنتاج الفني.";
+"SAMRAT Musician" = "تتكون الفرقة من ٤ إيقاعات و كمان وكيبورد.";
+"Yousef AlOmani" = "تتكون الفرقة من 4 ايقاعات ،  2 كمان ، قانون ، كيبورد ، و 4 كفافة ( راقصين )";
+"Choose upto Message" = "بحد أقصى يمكنك اختيار %d %s";
+"Select Minimum1" = "يرجى أختيار عازف %s واحد على الأقل.";
+"Select Minimum2" = "يرجى أختيار عازِفان %s على الأقل.";
+"Select Minimum3" = "يرجى أختيار %d عازفين %s على الأقل.";
+"wrong selection" = "نعتذر، هذا اليوم محجوز. يرجى أختيار يوم اخر";
+"CheckOTP" = "تم ارسال رمز OTP";
+"SelectSinger" = "يرجى أختيار مطربين";
+"Select Singer" = "أحجز الآن";
+"Developed By" = "Developed By";
+"tryagain" = "‏جرب مرة أخرى";
+"Please select Date" = "الرجاء تحديد التاريخ";
+"Enter email mobile" = "يرجى ادخال رقم الهاتف او الايميل المسجل لدينا.";
+"Mobile Email" = "رقم الموبايل أو البريد الإكترني";
+"Cancelled" = "Cancelled";
+"PlTryAg" = "Please try again";
+"Please enter old password" = "الرجاء إدخال كلمة المرور القديمة";
+"Please enter new password" = "الرجاء إدخال كلمة المرور الجديدة";
+"Please enter confirm password" = "الرجاء إدخال تأكيد كلمة المرور";
+"Your password and confirm password do not match" = "كلمة السر الجديدة وتاكيد كلمة السر يجب أن يكون متطابق";
+//"Booking amount mesage" = "يجب دفع 200 دينار مسترجعة في حالة عدم الاتفاق، لنقوم بإعداد السمرة وتأكيد حجزك خلال 24 ساعة";
+//"Booking amount mesage" = "يجب دفع 200 مسترجعة في حالة عدم الاتفاق، سنقوم بتأكيد حجزك خلال 24 ساعة";
+"Booking amount mesage" = "يجب دفع مبلغ 200 كعربون، وسيتم تأكيد الحجز خلال 24 ساعة";
+"Optional" = "اختياري";
+"alrandy_art_production" = "شركة الرندي للإنتاج الفني";
+"sound_system" = "هندسة صوت";
+"deleteAccount" = "إلغاء الحساب";
+"booked_Service" = "الخدمة المحجوزة";
+"booked_Services" = "الخدمات المحجوزة";
+
+"Send a Request" = "إرسال طلب حجز";
+
+"Choose Option" = "إختر خيارا";
+
+"WhatsApp"  = "WhatsApp";

