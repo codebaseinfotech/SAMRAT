@@ -16,7 +16,7 @@ class BookNowWothCalendarVC: UIViewController {
     @IBOutlet weak var musicianImgView: UIImageView!
     @IBOutlet var segmentOutlet: UISegmentedControl!
 //    @IBOutlet var lblChooseDefault: UILabel!
-//    @IBOutlet var btnSelecMusicians: UIButton!
+//    @IBOutlet var btnSelecMusicians: UIButton!waa
 //    @IBOutlet var btnSelectType: UIButton!
     @IBOutlet var calanderContainView: UIView!
     @IBOutlet var backView: UIView!

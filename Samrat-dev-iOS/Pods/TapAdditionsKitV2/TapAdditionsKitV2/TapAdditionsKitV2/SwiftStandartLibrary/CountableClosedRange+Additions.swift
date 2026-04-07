@@ -5,7 +5,7 @@
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
-import func		Darwin.C.stdlib.arc4random_uniform
+import Darwin
 
 /// Useful addition for CountableClosedRange.
 public extension CountableClosedRange where Bound == Int {

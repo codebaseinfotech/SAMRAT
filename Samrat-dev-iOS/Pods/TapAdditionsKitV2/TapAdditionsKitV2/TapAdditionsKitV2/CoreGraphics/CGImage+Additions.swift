@@ -16,9 +16,7 @@ import enum		CoreGraphics.CGContext.CGBlendMode
 import class	CoreGraphics.CGContext.CGContext
 import struct	CoreGraphics.CGGeometry.CGSize
 import class	CoreGraphics.CGImage.CGImage
-import func		Darwin.C.stdlib.free
-import func		Darwin.C.stdlib.malloc
-import func		Darwin.C.string.memcpy
+import Darwin
 import class	UIKit.UIColor.UIColor
 
 /// Useful additions to CGImage.

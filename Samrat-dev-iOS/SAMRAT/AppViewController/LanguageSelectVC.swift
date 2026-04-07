@@ -16,6 +16,8 @@ class LanguageSelectVC: UIViewController
     @IBOutlet var containerView: UIView!
     @IBOutlet var imgSplash: UIImageView!
     @IBOutlet var imgSplashLogo: UIImageView!
+    @IBOutlet var imgSplashLogoNewFlower: UIImageView!
+
     @IBOutlet weak var viewWA: UIView!
     
     private var observer: NSObjectProtocol?
@@ -93,6 +95,7 @@ class LanguageSelectVC: UIViewController
         } else {
             imgSplash.isHidden = true
             imgSplashLogo.isHidden = true
+            imgSplashLogoNewFlower.isHidden = true
         }
     }
     
