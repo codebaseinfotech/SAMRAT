@@ -24,6 +24,7 @@ class PaymentSuccessVC: UIViewController {
     
     @IBOutlet weak var rightTopConstrain: NSLayoutConstraint!
     var getResponseMsg:createBookingObj? = nil
+    var getResponseMsgOld:createBookingObjOld? = nil
     var retryPayment: (() -> ())?
     
     override func viewDidLoad() {

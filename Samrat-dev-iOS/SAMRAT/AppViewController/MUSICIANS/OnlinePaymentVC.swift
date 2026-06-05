@@ -799,9 +799,9 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
         
         var singerServices: [[String:String]] = []
-        
+
         if self.singer_ServicesWithHour.count > 0{
-              
+
                 for service in self.singer_ServicesWithHour {
                     var singerServices1: [String:String] = [:]
                     singerServices1 = ["service_id": "\(service.service_id ?? "")", "hrs": "\(service.hrs ?? "")"]
@@ -814,21 +814,84 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
 //            } catch {
 //                print(error)
 //            }
-            
+
 //            let myDict = self.singer_ServicesWithHour.reduce(into: [String: String]()) {
 //                //$0[$1.service_id!] = $1.hrs
 //                $0["service_id"] = $1.service_id
 //                $0["hrs"] = $1.hrs
 //
 //            }
-            
+
             let service_id = self.singer_ServicesWithHour[0].service_id!
             let hrs = self.singer_ServicesWithHour[0].hrs!
-             
+
            // singerServices = [["service_id": service_id, "hrs": hrs]]
-            
+
         }
-        
+
+        // Build singers array for v10 API
+        var singersArray: [[String: Any]] = []
+
+        if isFromMultiple {
+            for singer in self.selectedSingers {
+                var singerDict: [String: Any] = [:]
+                singerDict["singer_id"] = "\(singer.id ?? 0)"
+                singerDict["is_service"] = singer.is_service ?? 0
+
+                // Find services that belong to this singer
+                var thisSingerServices: [[String: String]] = []
+                if singer.is_service == 1, let singerAvailableServices = singer.services {
+                    // Get service IDs that belong to this singer
+                    let singerServiceIds = singerAvailableServices.map { $0.id ?? 0 }
+
+                    // First try singer_ServicesWithHour
+                    if self.singer_ServicesWithHour.count > 0 {
+                        for service in self.singer_ServicesWithHour {
+                            if let serviceIdStr = service.service_id,
+                               let serviceId = Int(serviceIdStr),
+                               singerServiceIds.contains(serviceId) {
+                                thisSingerServices.append([
+                                    "service_id": serviceIdStr,
+                                    "hrs": service.hrs ?? "00:00:00"
+                                ])
+                            }
+                        }
+                    }
+
+                    // If still empty, check selectedServicesData
+                    if thisSingerServices.count == 0 && self.selectedServicesData.count > 0 {
+                        for service in self.selectedServicesData {
+                            if let serviceId = service.id, singerServiceIds.contains(serviceId) {
+                                thisSingerServices.append([
+                                    "service_id": "\(serviceId)",
+                                    "hrs": "00:00:00"
+                                ])
+                            }
+                        }
+                    }
+
+                    // If still empty, use singer's first available service (default)
+                    if thisSingerServices.count == 0 {
+                        if let firstService = singerAvailableServices.first, let serviceId = firstService.id {
+                            thisSingerServices.append([
+                                "service_id": "\(serviceId)",
+                                "hrs": "00:00:00"
+                            ])
+                        }
+                    }
+                }
+                singerDict["singer_services"] = thisSingerServices
+                singersArray.append(singerDict)
+            }
+        } else {
+            // Single singer
+            var singerDict: [String: Any] = [:]
+            singerDict["singer_id"] = "\(self.selectedSinger?.id ?? 0)"
+            singerDict["is_service"] = self.selectedSinger?.is_service ?? 0
+            singerDict["singer_services"] = singerServices
+            singersArray.append(singerDict)
+        }
+
         var parameters:[String : Any] = [:]
         
         let dateFormatter = DateFormatter()
@@ -903,7 +966,10 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         if selectedCountry != nil {
             parameters["country_id"] = selectedCountry?.id
         }
-        
+
+        // Add singers array for v10 API
+        parameters["singers"] = singersArray
+
         ActivityIndicatorWithLabel.shared.showProgressView(uiView: self.view)
         APIManager.handler.PostRequest(url: ApiUrl.Paymentoption, params: parameters, isLoader: true, header: nil, controller: self) { (result) in
             ActivityIndicatorWithLabel.shared.hideProgressView()
@@ -1015,11 +1081,72 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             
             let service_id = self.singer_ServicesWithHour[0].service_id!
             let hrs = self.singer_ServicesWithHour[0].hrs!
-             
+
            // singerServices = [["service_id": service_id, "hrs": hrs]]
-            
+
         }
-    
+
+        // Build singers array for v10 API
+        var singersArrayCreate: [[String: Any]] = []
+        if isFromMultiple {
+            for singer in self.selectedSingers {
+                var singerDict: [String: Any] = [:]
+                singerDict["singer_id"] = "\(singer.id ?? 0)"
+                singerDict["is_service"] = singer.is_service ?? 0
+
+                // Find services that belong to this singer
+                var thisSingerServices: [[String: String]] = []
+                if singer.is_service == 1, let singerAvailableServices = singer.services {
+                    // Get service IDs that belong to this singer
+                    let singerServiceIds = singerAvailableServices.map { $0.id ?? 0 }
+
+                    // First try singer_ServicesWithHour
+                    if self.singer_ServicesWithHour.count > 0 {
+                        for service in self.singer_ServicesWithHour {
+                            if let serviceIdStr = service.service_id,
+                               let serviceId = Int(serviceIdStr),
+                               singerServiceIds.contains(serviceId) {
+                                thisSingerServices.append([
+                                    "service_id": serviceIdStr,
+                                    "hrs": service.hrs ?? "00:00:00"
+                                ])
+                            }
+                        }
+                    }
+
+                    // If still empty, check selectedServicesData
+                    if thisSingerServices.count == 0 && self.selectedServicesData.count > 0 {
+                        for service in self.selectedServicesData {
+                            if let serviceId = service.id, singerServiceIds.contains(serviceId) {
+                                thisSingerServices.append([
+                                    "service_id": "\(serviceId)",
+                                    "hrs": "00:00:00"
+                                ])
+                            }
+                        }
+                    }
+
+                    // If still empty, use singer's first available service (default)
+                    if thisSingerServices.count == 0 {
+                        if let firstService = singerAvailableServices.first, let serviceId = firstService.id {
+                            thisSingerServices.append([
+                                "service_id": "\(serviceId)",
+                                "hrs": "00:00:00"
+                            ])
+                        }
+                    }
+                }
+                singerDict["singer_services"] = thisSingerServices
+                singersArrayCreate.append(singerDict)
+            }
+        } else {
+            var singerDict: [String: Any] = [:]
+            singerDict["singer_id"] = "\(self.selectedSinger?.id ?? 0)"
+            singerDict["is_service"] = self.selectedSinger?.is_service ?? 0
+            singerDict["singer_services"] = singerServices
+            singersArrayCreate.append(singerDict)
+        }
+
         var parameter = ["":""] as [String : Any]
         
         if appDelegate.isFromBackPaymentScreen == true
@@ -1134,8 +1261,12 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             parameter["country_id"] = selectedCountry?.id
             parameter["currency_id"] = selectedCountry?.currency?.id
         }
+
+        // Add singers array for v10 API
+        parameter["singers"] = singersArrayCreate
+
         JSN.log("create bookingapi param==>%@", parameter)
- 
+
         ActivityIndicatorWithLabel.shared.showProgressView(uiView: self.view)
         APIManager.handler.PostRequest(url: ApiUrl.createBooking, params: parameter, isLoader: true, header: nil, controller: self) { (result) in
             ActivityIndicatorWithLabel.shared.hideProgressView()
@@ -1148,25 +1279,40 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     if appDelegate.singer_booking_id != ""
                     {
                         let bookingResponse = try? JSONDecoder().decode(createBookingObjOld.self, from: data)
-                        
+
                         if bookingResponse?.status == true {
-                            
+
                             let booking_id = "\(String(describing: bookingResponse?.singer_booking_id))"
                             let number = Int(booking_id.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
                             appDelegate.singer_booking_id = "\(number ?? 0)"
 
                             self.booking_transaction_message = bookingResponse?.message ?? ""
-                            if getSelectedCountry()?.country == "Kuwait" || getSelectedCountry()?.country == "Kuwait ar"
-                            {
+
+                            // New payment flow logic
+                            if bookingResponse?.is_cod == 1 {
+                                // COD - Go to Payment Success Page directly
+                                if self.parentCatObj?.id == 21 || self.parentCatObj?.id == 23 {
+                                    let paymentvc = WeddingMusiciaPaymentSucessVC()
+                                    paymentvc.getResponseMsgOld = bookingResponse
+                                    paymentvc.catId = self.parentCatObj?.id ?? 0
+                                    paymentvc.subCatId = self.categoriesDetails?.id ?? 0
+                                    self.fadeTo(paymentvc)
+                                } else {
+                                    let paymentvc = PaymentSuccessVC()
+                                    paymentvc.catId = self.parentCatObj?.id ?? 0
+                                    paymentvc.getResponseMsgOld = bookingResponse
+                                    self.fadeTo(paymentvc)
+                                }
+                            } else if bookingResponse?.payment != nil {
+                                // KNET WebView
                                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                                 let vc = storyBoard.instantiateViewController(withIdentifier: "WebPaymentVC") as! WebPaymentVC
                                 vc.dicCreateBookingObjOld = bookingResponse!
                                 vc.dicParentCatObj = self.parentCatObj
                                 vc.categoriesDetails = self.categoriesDetails
                                 self.navigationController?.pushViewController(vc, animated: true)
-                            }
-                            else
-                            {
+                            } else {
+                                // Saudi Arabia payment flow
                                 ActivityIndicatorWithLabel.shared.showProgressView(uiView: self.view)
                                 self.dicCreateBookingObjOld = bookingResponse!
                                 let sessionPayment = Session()
@@ -1182,50 +1328,60 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                             self.isErrorShowing = true
                             AlertView.instance.showAlert(title: Localized("alert"), message: NSAttributedString(string: bookingResponse?.message ?? Localized("somethingWentWrong")), alertType: .oneButton)
                             AlertView.instance.alertViewDelegate = self
-                            //(toastText: UserModel.shared.objUser?.message ?? "", withStatus: toastFailure)
                         }
                     }
                     else
                     {
                         let bookingResponse = try? JSONDecoder().decode(createBookingObj.self, from: data)
-                        
+
                         if bookingResponse?.status == true {
-                            
+
                             self.booking_transaction_message = bookingResponse?.message ?? ""
-                            
+
                             let booking_id = "\(String(describing: bookingResponse?.singer_booking_id))"
                             let number = Int(booking_id.components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
                             appDelegate.singer_booking_id = "\(number ?? 0)"
- 
-                            if getSelectedCountry()?.country == "Kuwait" || getSelectedCountry()?.country == "Kuwait ar"
-                            {
+
+                            // New payment flow logic
+                            if bookingResponse?.is_cod == 1 {
+                                // COD - Go to Payment Success Page directly
+                                if self.parentCatObj?.id == 21 || self.parentCatObj?.id == 23 {
+                                    let paymentvc = WeddingMusiciaPaymentSucessVC()
+                                    paymentvc.getResponseMsg = bookingResponse
+                                    paymentvc.catId = self.parentCatObj?.id ?? 0
+                                    paymentvc.subCatId = self.categoriesDetails?.id ?? 0
+                                    self.fadeTo(paymentvc)
+                                } else {
+                                    let paymentvc = PaymentSuccessVC()
+                                    paymentvc.catId = self.parentCatObj?.id ?? 0
+                                    paymentvc.getResponseMsg = bookingResponse
+                                    self.fadeTo(paymentvc)
+                                }
+                            } else if bookingResponse?.payment != nil {
+                                // KNET WebView
                                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                                 let vc = storyBoard.instantiateViewController(withIdentifier: "WebPaymentVC") as! WebPaymentVC
                                 vc.dicCreateBookingObj = bookingResponse!
                                 vc.dicParentCatObj = self.parentCatObj
                                 vc.categoriesDetails = self.categoriesDetails
                                 self.navigationController?.pushViewController(vc, animated: true)
-                            }
-                            else
-                            {
+                            } else {
+                                // Saudi Arabia payment flow
                                 ActivityIndicatorWithLabel.shared.showProgressView(uiView: self.view)
-                                
                                 self.dicCreateBookingObj = bookingResponse!
-                                
                                 let sessionPayment = Session()
                                 sessionPayment.delegate = self
                                 sessionPayment.dataSource = self
                                 sessionPayment.appearance = self
                                 sessionPayment.start()
                             }
-                            
+
                         }
                         else
                         {
                             self.isErrorShowing = true
                             AlertView.instance.showAlert(title: Localized("alert"), message: NSAttributedString(string: bookingResponse?.message ?? Localized("somethingWentWrong")), alertType: .oneButton)
                             AlertView.instance.alertViewDelegate = self
-                            //(toastText: UserModel.shared.objUser?.message ?? "", withStatus: toastFailure)
                         }
                     }
                     

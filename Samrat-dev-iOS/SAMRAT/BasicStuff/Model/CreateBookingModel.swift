@@ -17,7 +17,10 @@ struct createBookingObj: Codable {
     var message:String?
     var payment: paymentUser?
     var singer_booking_id:IDIng?
-
+    var is_cod:Int?
+    var total_amount:String?
+    var success_message:String?
+    var error_message:String?
 }
 
 
@@ -33,7 +36,10 @@ struct createBookingObjOld: Codable {
     var message:String?
     var payment: paymentUserOld?
     var singer_booking_id:IDIng?
-
+    var is_cod:Int?
+    var total_amount:String?
+    var success_message:String?
+    var error_message:String?
 }
 
 

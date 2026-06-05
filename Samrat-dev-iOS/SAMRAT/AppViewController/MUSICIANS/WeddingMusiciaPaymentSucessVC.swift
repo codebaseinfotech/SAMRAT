@@ -24,6 +24,8 @@ class WeddingMusiciaPaymentSucessVC: UIViewController {
     
     var catId = 0
     var subCatId = 0
+    var getResponseMsg:createBookingObj? = nil
+    var getResponseMsgOld:createBookingObjOld? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
