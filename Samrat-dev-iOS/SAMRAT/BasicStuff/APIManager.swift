@@ -21,12 +21,11 @@ var devicePushToken = "123"
 //version 1.7(12)
 //version 1.8(13)
 //version 1.9(14)
-let appVersion = "29" //Need to increase version by +1 whenever new build needs to upload on app store
+let appVersion = "30" //Need to increase version by +1 whenever new build needs to upload on app store
 
 struct BaseUrl {
-    static let liveUrl = "https://samrat.app/api/"
-//    static let testServer = "http://157.175.73.48/api/"
-    static let testServer = "http://157.175.239.180/api/"
+//    static let liveUrl = "https://samrat.app/api/"
+    static let liveUrl = "https://dev.samrat.app/api/"
 }
 
 struct ApiUrl {
@@ -86,14 +85,52 @@ func apiHeaderParam() -> [String : String]?  {
 }
 
 class APIManager: NSObject {
-    
+
     // MARK: - Other Methods
     static var isConnectedToNetwork: Bool {
         let network = NetworkReachabilityManager()
         return (network?.isReachable)!
     }
-    
+
     static let handler = APIManager()
+
+    // MARK: - API Logging Helper
+    private func logAPIRequest(url: String, method: String, params: [String: Any]? = nil, headers: [String: String]?) {
+        print("\n╔══════════════════════════════════════════════════════════════")
+        print("║ 🚀 API REQUEST")
+        print("╠══════════════════════════════════════════════════════════════")
+        print("║ URL: \(url)")
+        print("║ Method: \(method)")
+        if let params = params {
+            print("║ Parameters: \(params)")
+        }
+        if let headers = headers {
+            print("║ Headers: \(headers)")
+        }
+        print("╚══════════════════════════════════════════════════════════════\n")
+    }
+
+    private func logAPIResponse(url: String, statusCode: Int?, response: Any?, error: Error? = nil) {
+        print("\n╔══════════════════════════════════════════════════════════════")
+        print("║ 📥 API RESPONSE")
+        print("╠══════════════════════════════════════════════════════════════")
+        print("║ URL: \(url)")
+        if let statusCode = statusCode {
+            print("║ Status Code: \(statusCode)")
+        }
+        if let error = error {
+            print("║ ❌ Error: \(error.localizedDescription)")
+        }
+        if let response = response {
+            if let jsonData = try? JSONSerialization.data(withJSONObject: response, options: .prettyPrinted),
+               let jsonString = String(data: jsonData, encoding: .utf8) {
+                print("║ Response: \(jsonString)")
+            } else {
+                print("║ Response: \(response)")
+            }
+        }
+        print("╚══════════════════════════════════════════════════════════════\n")
+    }
     
     var request: Alamofire.Request? {
         didSet {
@@ -122,13 +159,19 @@ class APIManager: NSObject {
             }else {
                 headers = header
             }
-            
-            Alamofire.request(url, method: HTTPMethod.post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in//(header != nil) ? header:
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "POST", params: params, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: HTTPMethod.post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in//(header != nil) ? header:
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.result.value {
@@ -137,10 +180,10 @@ class APIManager: NSObject {
                         if isLoader == true {
                             stopLoader()
                         }
-                        
+
                     }
                     break
-                    
+
                 case .failure(_):
                     stopLoader()
                     if let data = response.result.value {
@@ -165,12 +208,19 @@ class APIManager: NSObject {
                 startLoaderWithColor()
             }
             let headers = ["Content-Type": "application/json"]
-            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in//(header != nil) ? header:
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "POST (MultiPart)", params: params, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in//(header != nil) ? header:
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.result.value {
@@ -179,7 +229,7 @@ class APIManager: NSObject {
                         stopLoader()
                     }
                     break
-                    
+
                 case .failure(_):
                     stopLoader()
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
@@ -198,12 +248,19 @@ class APIManager: NSObject {
                 startLoaderWithColor()
             }
             //            let headers = ["Content-Type": "application/json"]
-            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "POST (Payment)", params: params, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.result.value {
@@ -212,7 +269,7 @@ class APIManager: NSObject {
                         stopLoader()
                     }
                     break
-                    
+
                 case .failure(_):
                     stopLoader()
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
@@ -230,28 +287,35 @@ class APIManager: NSObject {
             if isLoader == true {
                 //                base.startLoader()
             }
-            Alamofire.request(url, method: .get, parameters:nil, encoding: URLEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "GET", params: nil, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .get, parameters:nil, encoding: URLEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
-                    
+
                     if let data = response.result.value {
                         let json = data as? [String:Any] ?? [:]
                         completion(.success(json))
                         //                        base.stopLoader()
                     }
                     break
-                    
+
                 case .failure(_):
                     //                    base.stopLoader()
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
                 }
             }
-            
+
         } else {
             controller?.showAlert(title: Localized("alert"), message: Localized("pleaseCheckInternetConnection"))
             //            base.customToast(toastText: Localized("pleaseCheckInternetConnection"), withStatus: toastFailure)
@@ -265,30 +329,42 @@ class APIManager: NSObject {
                 startLoaderWithColor()
             }
             let headers = ["Content-Type": "application/json"]
-            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseString(completionHandler: { (response) in
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "POST", params: params, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseString(completionHandler: { [weak self] (response) in
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.result.value {
                         let jsonString = data as? String ?? ""
                         let json = [String: Any]()
-                        
+
                         let string = jsonString
                         let data = string.data(using: .utf8)!
                         do {
                             if let jsonArray = try JSONSerialization.jsonObject(with: data, options : .allowFragments) as? [String: Any] {
+                                // Log Response
+                                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: jsonArray, error: nil)
                                 completion(.success(jsonArray))
                             } else {
                                 print("bad json")
+                                // Log Response Error
+                                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: jsonString, error: nil)
                             }
                         } catch let error as NSError {
                             print(error)
+                            // Log Response Error
+                            self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: jsonString, error: error)
                         }
                         stopLoader()
                     }
                     break
-                case .failure(_):
+                case .failure(let error):
                     stopLoader()
+                    // Log Response Error
+                    self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: nil, error: error)
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
                 }
             })
@@ -322,9 +398,16 @@ class APIManager: NSObject {
             //                base.startLoader()
             //            }
             //            let headers = ["Content-Type": "application/json"]
-            
+
+            // Log Request
+            logAPIRequest(url: url, method: "GET (Search)", params: nil, headers: apiHeaderParam())
+
             Alamofire.SessionManager.default.session.getAllTasks { tasks in tasks.forEach { $0.cancel() }}
-            Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response:DataResponse<Any>) in
+            Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response:DataResponse<Any>) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.result.value {
@@ -345,21 +428,23 @@ class APIManager: NSObject {
     }
     
     func PostRequest(url:String, params:[String:Any], isLoader:Bool,header:HTTPHeaders?, setLogout: Bool = true, controller:UIViewController, completion: @escaping (apiResult2) -> ()) {
-        JSN.log("url ===>%@", url)
-        JSN.log("Parameters ===>%@", params)
-        JSN.log("Header ===>%@", apiHeaderParam() as Any)
-        
+        // Log Request
+        logAPIRequest(url: url, method: "POST", params: params, headers: apiHeaderParam())
+
         if Internet.isConnected() == true {
             if isLoader == true {
                 //                startLoaderWithColor()
             }
-            
-            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in
-                
+
+            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.data {
@@ -369,7 +454,7 @@ class APIManager: NSObject {
                         }
                     }
                     break
-                    
+
                 case .failure(_):
                     //                    stopLoader()
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
@@ -389,12 +474,19 @@ class APIManager: NSObject {
             }
             let loginToken = SamratGlobal.loggedInUser()?.message ?? ""
             let tokenType = SamratGlobal.loggedInUser()?.message ?? ""
-            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "POST (Custom Header)", params: params, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .post, parameters:params, encoding: JSONEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                 guard checkForLogout(response: response, vc: controller, setLogout: setLogout) else {
                     return
                 }
-                
+
                 switch(response.result) {
                 case .success(_):
                     if let data = response.data {
@@ -402,7 +494,7 @@ class APIManager: NSObject {
                         stopLoader()
                     }
                     break
-                    
+
                 case .failure(_):
                     stopLoader()
                     completion(.failure(Localized("pleaseCheckInternetConnection")))
@@ -420,34 +512,37 @@ class APIManager: NSObject {
             if isLoader == true {
                 //                base.startLoader()
             }
-            print(url)
-            Alamofire.request(url, method: .get, parameters:nil, encoding: URLEncoding.default, headers: apiHeaderParam()).responseJSON { (response) in
-                
+
+            // Log Request
+            logAPIRequest(url: url, method: "GET", params: nil, headers: apiHeaderParam())
+
+            Alamofire.request(url, method: .get, parameters:nil, encoding: URLEncoding.default, headers: apiHeaderParam()).responseJSON { [weak self] (response) in
+
+                // Log Response
+                self?.logAPIResponse(url: url, statusCode: response.response?.statusCode, response: response.result.value, error: response.result.error)
+
                let statudCode = response.response?.statusCode
-                
+
                 if statudCode == 503{
-                    
+
                 } else{
                     switch(response.result) {
                     case .success(_):
                         if let data = response.data {
-                            if let responseDict = ((response.value as AnyObject) as? NSDictionary) {
-                                print(responseDict)
-                             }
                             completion(.success(data))
                             stopLoader()
                         }
                         break
-                        
+
                     case .failure(let error):
                         stopLoader()
                         completion(.failure(Localized("pleaseCheckInternetConnection")))
                     }
                 }
-                
+
 
             }
-            
+
         } else {
             controller.showAlert(title: Localized("alert"), message: Localized("pleaseCheckInternetConnection"))
             //            base.customToast(toastText: Localized("pleaseCheckInternetConnection"), withStatus: toastFailure)

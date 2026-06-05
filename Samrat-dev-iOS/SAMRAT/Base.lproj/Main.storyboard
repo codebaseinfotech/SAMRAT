@@ -992,6 +992,40 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Gm7-B5-2vs">
                                 <rect key="frame" x="127.66666666666669" y="427.66666666666669" width="175" height="77"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svc-cnt-001">
+                                <rect key="frame" x="24" y="783" width="382" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-ttl-001">
+                                        <rect key="frame" x="0" y="0" width="200" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 KD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-amt-001">
+                                        <rect key="frame" x="282" y="0" width="100" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.83137254901960789" green="0.6470588235294118" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service description goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-dsc-001">
+                                        <rect key="frame" x="0" y="24" width="382" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="0.8" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0" alpha="0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="svc-ttl-001" firstAttribute="leading" secondItem="svc-cnt-001" secondAttribute="leading" id="svc-c1"/>
+                                    <constraint firstItem="svc-ttl-001" firstAttribute="top" secondItem="svc-cnt-001" secondAttribute="top" id="svc-c2"/>
+                                    <constraint firstAttribute="trailing" secondItem="svc-amt-001" secondAttribute="trailing" id="svc-c3"/>
+                                    <constraint firstItem="svc-amt-001" firstAttribute="top" secondItem="svc-cnt-001" secondAttribute="top" id="svc-c4"/>
+                                    <constraint firstItem="svc-dsc-001" firstAttribute="top" secondItem="svc-ttl-001" secondAttribute="bottom" constant="4" id="svc-c5"/>
+                                    <constraint firstItem="svc-dsc-001" firstAttribute="leading" secondItem="svc-cnt-001" secondAttribute="leading" id="svc-c6"/>
+                                    <constraint firstAttribute="trailing" secondItem="svc-dsc-001" secondAttribute="trailing" id="svc-c7"/>
+                                    <constraint firstAttribute="bottom" secondItem="svc-dsc-001" secondAttribute="bottom" id="svc-c8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TCb-Jr-iNa"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1014,7 +1048,10 @@
                             <constraint firstItem="TCb-Jr-iNa" firstAttribute="trailing" secondItem="0ej-aM-IZr" secondAttribute="trailing" constant="20" id="lte-Jr-Evc"/>
                             <constraint firstAttribute="bottom" secondItem="rvH-KY-uBt" secondAttribute="bottom" id="pRc-q6-Co1"/>
                             <constraint firstItem="0Oz-3Z-aO0" firstAttribute="top" secondItem="tTJ-Eo-yVA" secondAttribute="bottom" constant="8" id="tGJ-NO-8sw"/>
-                            <constraint firstItem="Y3M-8F-gkv" firstAttribute="top" secondItem="0ej-aM-IZr" secondAttribute="bottom" constant="16" id="tzi-77-Cud"/>
+                            <constraint firstItem="svc-cnt-001" firstAttribute="top" secondItem="0ej-aM-IZr" secondAttribute="bottom" constant="12" id="svc-top-plyr"/>
+                            <constraint firstItem="svc-cnt-001" firstAttribute="leading" secondItem="TCb-Jr-iNa" secondAttribute="leading" constant="24" id="svc-lead"/>
+                            <constraint firstItem="TCb-Jr-iNa" firstAttribute="trailing" secondItem="svc-cnt-001" secondAttribute="trailing" constant="24" id="svc-trail"/>
+                            <constraint firstItem="Y3M-8F-gkv" firstAttribute="top" secondItem="svc-cnt-001" secondAttribute="bottom" constant="12" id="tzi-77-Cud"/>
                             <constraint firstItem="rvH-KY-uBt" firstAttribute="trailing" secondItem="TCb-Jr-iNa" secondAttribute="trailing" id="uQW-rb-FBD"/>
                             <constraint firstItem="Y3M-8F-gkv" firstAttribute="centerX" secondItem="TCb-Jr-iNa" secondAttribute="centerX" id="vCK-up-1oU"/>
                             <constraint firstItem="tTJ-Eo-yVA" firstAttribute="leading" secondItem="TCb-Jr-iNa" secondAttribute="leading" constant="25" id="xNt-LM-KxX"/>
@@ -1033,6 +1070,10 @@
                         <outlet property="viewGradient" destination="DEA-au-rqk" id="sfA-en-YJA"/>
                         <outlet property="viewPlayer" destination="0ej-aM-IZr" id="vvP-aN-0sr"/>
                         <outlet property="viewWA" destination="ElX-0E-Ldk" id="4lT-lE-Ppy"/>
+                        <outlet property="viewServiceContainer" destination="svc-cnt-001" id="svc-out-cnt"/>
+                        <outlet property="lblServiceTitle" destination="svc-ttl-001" id="svc-out-ttl"/>
+                        <outlet property="lblServiceAmount" destination="svc-amt-001" id="svc-out-amt"/>
+                        <outlet property="lblServiceDescription" destination="svc-dsc-001" id="svc-out-dsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6R-H4-GD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -27,8 +27,14 @@ class MusiciansDetailsViewController: UIViewController {
             //            viewGradient.applyGradient(colours: [UIColor.black,UIColor.clear])
         }
     }
-    
+
     @IBOutlet weak var viewWA: UIView!
+
+    // MARK: - Service Details IBOutlets
+    @IBOutlet weak var lblServiceTitle: UILabel!
+    @IBOutlet weak var lblServiceAmount: UILabel!
+    @IBOutlet weak var lblServiceDescription: UILabel!
+    @IBOutlet weak var viewServiceContainer: UIView!
     
     
     var selectedSingerDetails:singersData? = nil
@@ -137,6 +143,9 @@ class MusiciansDetailsViewController: UIViewController {
         
 //        self.musicianImgView.downloadImage(str: self.selectedSingerDetails?.detail_image,
 //                                           placeholder: Images.appLogo2)
+
+        // Setup service details view if services exist
+        setupServiceDetailsView()
     }
     
     @objc func handlePan(_ gesture: UIPanGestureRecognizer) {
@@ -180,8 +189,29 @@ class MusiciansDetailsViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-       
-        
+
+    }
+
+    // MARK: - Setup Service Details View
+    private func setupServiceDetailsView() {
+        // Check if services exist
+        guard let services = self.selectedSingerDetails?.services, !services.isEmpty,
+              let firstService = services.first else {
+            // Hide service container if no services
+            viewServiceContainer?.isHidden = true
+            return
+        }
+
+        // Show service container and populate data
+        viewServiceContainer?.isHidden = false
+        lblServiceTitle?.text = firstService.title ?? ""
+        lblServiceDescription?.text = firstService.description ?? ""
+
+        if let amount = firstService.total_service_amount {
+            lblServiceAmount?.text = "\(amount) KD"
+        } else {
+            lblServiceAmount?.text = ""
+        }
     }
     
     func downloadMp3File(_ url:URL?) {
