@@ -64,9 +64,10 @@ class WeddingMusiciaPaymentSucessVC: UIViewController {
         
         
         if strType == 1 {
-            
+
         } else {
-            self.lblPaymentSuceessMsg.isHidden = true
+            self.lblPaymentSuceessMsg.isHidden = false
+            self.lblPaymentSuceessMsg.text = self.strMessage
             imgView.image = UIImage(named: "cross-sign")
             lblPaymentSuccessFul.text = Localized("paymentFailed")
             self.title = ""

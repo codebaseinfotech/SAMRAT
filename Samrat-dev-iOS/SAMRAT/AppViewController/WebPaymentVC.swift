@@ -192,10 +192,27 @@ class WebPaymentVC: UIViewController, WKNavigationDelegate, UIWebViewDelegate, A
                             
                             
                             }else {
-                                self.showAlert(title: Localized("alert"), message: booking_transaction_message ?? Localized("somethingWentWrong"))
-                                AlertView.instance.showAlert(title: Localized("alert"), message: NSAttributedString(string: booking_transaction_message ?? Localized("somethingWentWrong")), alertType: .oneButton)
-                                AlertView.instance.alertViewDelegate = self
-                             //   (toastText: UserModel.shared.objUser?.message ?? "", withStatus: toastFailure)
+                                // Payment failed/canceled - navigate to payment fail screen
+                                if self.dicParentCatObj?.id == 21 || self.dicParentCatObj?.id == 23 {
+                                    let paymentvc = WeddingMusiciaPaymentSucessVC()
+                                    paymentvc.strMessage = booking_transaction_message ?? ""
+                                    paymentvc.catId = self.dicParentCatObj?.id ?? 0
+                                    paymentvc.subCatId = self.categoriesDetails?.id ?? 0
+                                    paymentvc.strType = type ?? 0
+                                    paymentvc.retryPayment = {
+                                        self.navigationController?.popViewController(animated: true)
+                                    }
+                                    self.fadeTo(paymentvc)
+                                } else {
+                                    let paymentvc = PaymentSuccessVC()
+                                    paymentvc.catId = self.dicParentCatObj?.id ?? 0
+                                    paymentvc.strMessage = booking_transaction_message ?? ""
+                                    paymentvc.strType = type ?? 0
+                                    paymentvc.retryPayment = {
+                                        self.navigationController?.popViewController(animated: true)
+                                    }
+                                    self.fadeTo(paymentvc)
+                                }
                             }
                             
                         }
