@@ -31,10 +31,10 @@ struct singersData: Codable {
     var audio: String?
     var price: String?
     var duration: String?
-    var minimum_booking_value, commission_value: Double?
+    var minimum_booking_value, commission_value,single_price,two_price, three_price, four_price : Double?
     var minimum_booking_value_type, commission_type : Int?
-    var is_service, multiple_service_booking, default_band_price, single_price: Int?
-    var two_price, three_price, four_price, status: Int?
+    var is_service, multiple_service_booking, default_band_price: Int?
+    var status: Int?
     var is_deleted: Int?
     var created_at, updated_at: String?
     var singer_id, abc: Int?
@@ -53,12 +53,11 @@ struct DatumCountry: Codable {
     var id, singer_id, country_id: Int?
     var musician_id: String?
     var minimum_booking_value_type, commission_type: Int?
-    var default_band_price, single_price, two_price, three_price: Int?
-    var four_price: Int?
+    var default_band_price: Int?
     var display_order: Int?
     var status: Int?
     var created_at, updated_at: String?
-    var commission_value, minimum_booking_value: Double?
+    var commission_value, minimum_booking_value,single_price,two_price, three_price,four_price: Double?
 }
 
 // MARK: - Musician
