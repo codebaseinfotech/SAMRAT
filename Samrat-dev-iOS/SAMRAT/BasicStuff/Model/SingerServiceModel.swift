@@ -34,7 +34,7 @@ struct servicesAmtData: Codable {
     var duration:String?
     var additional_hour_price:Int?
     var commission_type:Int?
-    var commission_value:Int?
+    var commission_value:Double?
     var min_hr:String?
     var max_hr:String?
     var status:Int?

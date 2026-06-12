@@ -969,6 +969,8 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
 
         // Add singers array for v10 API
         parameters["singers"] = singersArray
+        
+        print("parameters \(parameters)")
 
         ActivityIndicatorWithLabel.shared.showProgressView(uiView: self.view)
         APIManager.handler.PostRequest(url: ApiUrl.Paymentoption, params: parameters, isLoader: true, header: nil, controller: self) { (result) in
