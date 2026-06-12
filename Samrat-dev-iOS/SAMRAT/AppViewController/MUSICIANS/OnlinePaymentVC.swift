@@ -1298,11 +1298,13 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                                     paymentvc.getResponseMsgOld = bookingResponse
                                     paymentvc.catId = self.parentCatObj?.id ?? 0
                                     paymentvc.subCatId = self.categoriesDetails?.id ?? 0
+                                    paymentvc.strType = 1
                                     self.fadeTo(paymentvc)
                                 } else {
                                     let paymentvc = PaymentSuccessVC()
                                     paymentvc.catId = self.parentCatObj?.id ?? 0
                                     paymentvc.getResponseMsgOld = bookingResponse
+                                    paymentvc.strType = 1
                                     self.fadeTo(paymentvc)
                                 }
                             } else if bookingResponse?.payment != nil {
@@ -1352,11 +1354,13 @@ class OnlinePaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                                     paymentvc.getResponseMsg = bookingResponse
                                     paymentvc.catId = self.parentCatObj?.id ?? 0
                                     paymentvc.subCatId = self.categoriesDetails?.id ?? 0
+                                    paymentvc.strType = 1
                                     self.fadeTo(paymentvc)
                                 } else {
                                     let paymentvc = PaymentSuccessVC()
                                     paymentvc.catId = self.parentCatObj?.id ?? 0
                                     paymentvc.getResponseMsg = bookingResponse
+                                    paymentvc.strType = 1
                                     self.fadeTo(paymentvc)
                                 }
                             } else if bookingResponse?.payment != nil {

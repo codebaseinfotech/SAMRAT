@@ -21,11 +21,11 @@ var devicePushToken = "123"
 //version 1.7(12)
 //version 1.8(13)
 //version 1.9(14)
-let appVersion = "30" //Need to increase version by +1 whenever new build needs to upload on app store
+let appVersion = "31" //Need to increase version by +1 whenever new build needs to upload on app store
 
 struct BaseUrl {
-//    static let liveUrl = "https://samrat.app/api/"
-    static let liveUrl = "https://dev.samrat.app/api/"
+    static let liveUrl = "https://samrat.app/api/"
+//    static let liveUrl = "https://dev.samrat.app/api/"
 }
 
 struct ApiUrl {
